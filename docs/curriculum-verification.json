@@ -1,0 +1,5927 @@
+{
+  "tool": "SymPy 1.14.0",
+  "newProblemsChecked": 565,
+  "checks": [
+    {
+      "id": "linear-algebra-1-1-1",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "-1",
+          "right": "-1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-3",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-4",
+      "assertions": [
+        {
+          "left": "5",
+          "right": "5"
+        },
+        {
+          "left": "-1",
+          "right": "-1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-5",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-6",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-7",
+      "assertions": [
+        {
+          "left": "7",
+          "right": "7"
+        },
+        {
+          "left": "-1",
+          "right": "-1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-8",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-9",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-10",
+      "assertions": [
+        {
+          "left": "9",
+          "right": "9"
+        },
+        {
+          "left": "-1",
+          "right": "-1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-example-1",
+      "assertions": [
+        {
+          "left": "11",
+          "right": "11"
+        },
+        {
+          "left": "-1",
+          "right": "-1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-example-3",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-1",
+      "assertions": [
+        {
+          "left": "Matrix([[2, 3], [2, 3]])",
+          "right": "Matrix([[2, 3], [2, 3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 3], [2, 6]])",
+          "right": "Matrix([[1, 3], [2, 6]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-3",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 2], [3, 6]])",
+          "right": "Matrix([[1, 2], [3, 6]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-4",
+      "assertions": [
+        {
+          "left": "Matrix([[3, 3], [2, 5]])",
+          "right": "Matrix([[3, 3], [2, 5]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-5",
+      "assertions": [
+        {
+          "left": "Matrix([[2, 6], [2, 10]])",
+          "right": "Matrix([[2, 6], [2, 10]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-6",
+      "assertions": [
+        {
+          "left": "Matrix([[2, 2], [6, 10]])",
+          "right": "Matrix([[2, 2], [6, 10]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-7",
+      "assertions": [
+        {
+          "left": "Matrix([[4, 3], [2, 7]])",
+          "right": "Matrix([[4, 3], [2, 7]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-8",
+      "assertions": [
+        {
+          "left": "Matrix([[3, 9], [2, 16]])",
+          "right": "Matrix([[3, 9], [2, 16]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-9",
+      "assertions": [
+        {
+          "left": "Matrix([[3, 2], [9, 16]])",
+          "right": "Matrix([[3, 2], [9, 16]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-10",
+      "assertions": [
+        {
+          "left": "Matrix([[5, 3], [2, 9]])",
+          "right": "Matrix([[5, 3], [2, 9]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[6, 3], [2, 11]])",
+          "right": "Matrix([[6, 3], [2, 11]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[6, 18], [2, 46]])",
+          "right": "Matrix([[6, 18], [2, 46]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[7, 2], [21, 60]])",
+          "right": "Matrix([[7, 2], [21, 60]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, -1]])",
+          "right": "Matrix([[1, 0], [0, -1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-2",
+      "assertions": [
+        {
+          "left": "Matrix([[3, 2], [1, 2]])",
+          "right": "Matrix([[3, 2], [1, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-3",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 0], [0, 0]])",
+          "right": "Matrix([[0, 0], [0, 0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-4",
+      "assertions": [
+        {
+          "left": "Matrix([[4, 0], [0, -4]])",
+          "right": "Matrix([[4, 0], [0, -4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-5",
+      "assertions": [
+        {
+          "left": "Matrix([[6, 4], [2, 2]])",
+          "right": "Matrix([[6, 4], [2, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-6",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 0], [0, 0]])",
+          "right": "Matrix([[0, 0], [0, 0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-7",
+      "assertions": [
+        {
+          "left": "Matrix([[9, 0], [0, -9]])",
+          "right": "Matrix([[9, 0], [0, -9]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-8",
+      "assertions": [
+        {
+          "left": "Matrix([[11, 6], [3, 2]])",
+          "right": "Matrix([[11, 6], [3, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-9",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 0], [0, 0]])",
+          "right": "Matrix([[0, 0], [0, 0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-10",
+      "assertions": [
+        {
+          "left": "Matrix([[16, 0], [0, -16]])",
+          "right": "Matrix([[16, 0], [0, -16]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[25, 0], [0, -25]])",
+          "right": "Matrix([[25, 0], [0, -25]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[38, 12], [6, 2]])",
+          "right": "Matrix([[38, 12], [6, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 0], [0, 0]])",
+          "right": "Matrix([[0, 0], [0, 0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-3",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [1]])",
+          "right": "Matrix([[3], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-4",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-5",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-6",
+      "assertions": [
+        {
+          "left": "Matrix([[7], [2]])",
+          "right": "Matrix([[7], [2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-7",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-8",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-9",
+      "assertions": [
+        {
+          "left": "Matrix([[13], [3]])",
+          "right": "Matrix([[13], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-10",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[57], [7]])",
+          "right": "Matrix([[57], [7]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[3, 4], [1, 2]])",
+          "right": "Matrix([[3, 4], [1, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[2, 4], [3, 4]])",
+          "right": "Matrix([[2, 4], [3, 4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-3",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 2], [4, 6]])",
+          "right": "Matrix([[1, 2], [4, 6]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-4",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[3, 4], [1, 2]])",
+          "right": "Matrix([[3, 4], [1, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-5",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[3, 6], [3, 4]])",
+          "right": "Matrix([[3, 6], [3, 4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-6",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 2], [5, 8]])",
+          "right": "Matrix([[1, 2], [5, 8]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-7",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[3, 4], [1, 2]])",
+          "right": "Matrix([[3, 4], [1, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-8",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[4, 8], [3, 4]])",
+          "right": "Matrix([[4, 8], [3, 4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-9",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 2], [6, 10]])",
+          "right": "Matrix([[1, 2], [6, 10]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-10",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[3, 4], [1, 2]])",
+          "right": "Matrix([[3, 4], [1, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[3, 4], [1, 2]])",
+          "right": "Matrix([[3, 4], [1, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[7, 14], [3, 4]])",
+          "right": "Matrix([[7, 14], [3, 4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 2], [10, 18]])",
+          "right": "Matrix([[1, 2], [10, 18]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-1",
+      "assertions": [
+        {
+          "left": "Matrix([[8], [9]])",
+          "right": "Matrix([[8], [9]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-2",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [1]])",
+          "right": "Matrix([[3], [1]])"
+        },
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-3",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [3]])",
+          "right": "Matrix([[3], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-4",
+      "assertions": [
+        {
+          "left": "Matrix([[13], [14]])",
+          "right": "Matrix([[13], [14]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-5",
+      "assertions": [
+        {
+          "left": "Matrix([[6], [2]])",
+          "right": "Matrix([[6], [2]])"
+        },
+        {
+          "left": "8",
+          "right": "8"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-6",
+      "assertions": [
+        {
+          "left": "Matrix([[6], [6]])",
+          "right": "Matrix([[6], [6]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-7",
+      "assertions": [
+        {
+          "left": "Matrix([[18], [19]])",
+          "right": "Matrix([[18], [19]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-8",
+      "assertions": [
+        {
+          "left": "Matrix([[9], [3]])",
+          "right": "Matrix([[9], [3]])"
+        },
+        {
+          "left": "12",
+          "right": "12"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-9",
+      "assertions": [
+        {
+          "left": "Matrix([[9], [9]])",
+          "right": "Matrix([[9], [9]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-10",
+      "assertions": [
+        {
+          "left": "Matrix([[23], [24]])",
+          "right": "Matrix([[23], [24]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[28], [29]])",
+          "right": "Matrix([[28], [29]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[18], [6]])",
+          "right": "Matrix([[18], [6]])"
+        },
+        {
+          "left": "24",
+          "right": "24"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[21], [21]])",
+          "right": "Matrix([[21], [21]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-1",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-2",
+      "assertions": [
+        {
+          "left": "7",
+          "right": "7"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-3",
+      "assertions": [
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-4",
+      "assertions": [
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-5",
+      "assertions": [
+        {
+          "left": "10",
+          "right": "10"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-6",
+      "assertions": [
+        {
+          "left": "12",
+          "right": "12"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-7",
+      "assertions": [
+        {
+          "left": "7",
+          "right": "7"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-8",
+      "assertions": [
+        {
+          "left": "13",
+          "right": "13"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-9",
+      "assertions": [
+        {
+          "left": "18",
+          "right": "18"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-10",
+      "assertions": [
+        {
+          "left": "10",
+          "right": "10"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-example-1",
+      "assertions": [
+        {
+          "left": "13",
+          "right": "13"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-example-2",
+      "assertions": [
+        {
+          "left": "22",
+          "right": "22"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-example-3",
+      "assertions": [
+        {
+          "left": "42",
+          "right": "42"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-1",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-2",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "-3",
+          "right": "-3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-3",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-4",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-5",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "-3",
+          "right": "-3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-6",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "9",
+          "right": "9"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-7",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-8",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "-3",
+          "right": "-3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-9",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "12",
+          "right": "12"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-10",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-example-1",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-example-2",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "-3",
+          "right": "-3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-example-3",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "24",
+          "right": "24"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-1",
+      "assertions": [
+        {
+          "left": "-4",
+          "right": "-4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-2",
+      "assertions": [
+        {
+          "left": "1/2",
+          "right": "1/2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-3",
+      "assertions": [
+        {
+          "left": "8",
+          "right": "8"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-4",
+      "assertions": [
+        {
+          "left": "-6",
+          "right": "-6"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-5",
+      "assertions": [
+        {
+          "left": "1/3",
+          "right": "1/3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-6",
+      "assertions": [
+        {
+          "left": "12",
+          "right": "12"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-7",
+      "assertions": [
+        {
+          "left": "-8",
+          "right": "-8"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-8",
+      "assertions": [
+        {
+          "left": "1/4",
+          "right": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-9",
+      "assertions": [
+        {
+          "left": "16",
+          "right": "16"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-10",
+      "assertions": [
+        {
+          "left": "-10",
+          "right": "-10"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-example-1",
+      "assertions": [
+        {
+          "left": "-12",
+          "right": "-12"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-example-2",
+      "assertions": [
+        {
+          "left": "1/7",
+          "right": "1/7"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-example-3",
+      "assertions": [
+        {
+          "left": "32",
+          "right": "32"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-1",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "Matrix([[4], [3]])",
+          "right": "Matrix([[4], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0], [0, 1]])",
+          "right": "Matrix([[1, 0], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-4",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "Matrix([[7], [5]])",
+          "right": "Matrix([[7], [5]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-5",
+      "assertions": [
+        {
+          "left": "Matrix([[2, 0], [0, 2]])",
+          "right": "Matrix([[2, 0], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-6",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-7",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "Matrix([[10], [7]])",
+          "right": "Matrix([[10], [7]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-8",
+      "assertions": [
+        {
+          "left": "Matrix([[3, 0], [0, 3]])",
+          "right": "Matrix([[3, 0], [0, 3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-9",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-10",
+      "assertions": [
+        {
+          "left": "4",
+          "right": "4"
+        },
+        {
+          "left": "Matrix([[13], [9]])",
+          "right": "Matrix([[13], [9]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-example-1",
+      "assertions": [
+        {
+          "left": "5",
+          "right": "5"
+        },
+        {
+          "left": "Matrix([[16], [11]])",
+          "right": "Matrix([[16], [11]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[6, 0], [0, 6]])",
+          "right": "Matrix([[6, 0], [0, 6]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-example-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-1",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [2], [1]])",
+          "right": "Matrix([[2], [2], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [1], [-4]])",
+          "right": "Matrix([[1], [1], [-4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-4",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [3], [1]])",
+          "right": "Matrix([[3], [3], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-5",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [0], [-4]])",
+          "right": "Matrix([[3], [0], [-4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-6",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-7",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [4], [1]])",
+          "right": "Matrix([[4], [4], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-8",
+      "assertions": [
+        {
+          "left": "Matrix([[5], [-1], [-4]])",
+          "right": "Matrix([[5], [-1], [-4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-9",
+      "assertions": [
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-10",
+      "assertions": [
+        {
+          "left": "Matrix([[5], [5], [1]])",
+          "right": "Matrix([[5], [5], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[6], [6], [1]])",
+          "right": "Matrix([[6], [6], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[11], [-4], [-4]])",
+          "right": "Matrix([[11], [-4], [-4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-example-3",
+      "assertions": [
+        {
+          "left": "12",
+          "right": "12"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-3",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 0], [0, 0]])",
+          "right": "Matrix([[0, 0], [0, 0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-4",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-5",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-6",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 0], [0, 0]])",
+          "right": "Matrix([[0, 0], [0, 0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-7",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-8",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-9",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 0], [0, 0]])",
+          "right": "Matrix([[0, 0], [0, 0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-10",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 0], [0, 0]])",
+          "right": "Matrix([[0, 0], [0, 0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-1",
+      "assertions": [
+        {
+          "left": "a*x + a*y - a*z + b*x + b*y - b*z",
+          "right": "(a + b)*(x + y - z)"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-2",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-3",
+      "assertions": [
+        {
+          "left": "b",
+          "right": "b"
+        },
+        {
+          "left": "2*c",
+          "right": "2*c"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-4",
+      "assertions": [
+        {
+          "left": "a*x + 2*a*y - a*z + b*x + 2*b*y - b*z",
+          "right": "(a + b)*(x + 2*y - z)"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-5",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-6",
+      "assertions": [
+        {
+          "left": "b",
+          "right": "b"
+        },
+        {
+          "left": "2*c",
+          "right": "2*c"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-7",
+      "assertions": [
+        {
+          "left": "a*x + 3*a*y - a*z + b*x + 3*b*y - b*z",
+          "right": "(a + b)*(x + 3*y - z)"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-8",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-9",
+      "assertions": [
+        {
+          "left": "b",
+          "right": "b"
+        },
+        {
+          "left": "2*c",
+          "right": "2*c"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-10",
+      "assertions": [
+        {
+          "left": "a*x + 4*a*y - a*z + b*x + 4*b*y - b*z",
+          "right": "(a + b)*(x + 4*y - z)"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-example-1",
+      "assertions": [
+        {
+          "left": "a*x + 5*a*y - a*z + b*x + 5*b*y - b*z",
+          "right": "(a + b)*(x + 5*y - z)"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-example-2",
+      "assertions": [
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-example-3",
+      "assertions": [
+        {
+          "left": "b",
+          "right": "b"
+        },
+        {
+          "left": "2*c",
+          "right": "2*c"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-1",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [1]])",
+          "right": "Matrix([[2], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-2",
+      "assertions": [
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-3",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [1], [0]])",
+          "right": "Matrix([[1], [1], [0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-4",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [2]])",
+          "right": "Matrix([[4], [2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-5",
+      "assertions": [
+        {
+          "left": "5",
+          "right": "5"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-6",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [2], [0]])",
+          "right": "Matrix([[1], [2], [0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-7",
+      "assertions": [
+        {
+          "left": "Matrix([[6], [3]])",
+          "right": "Matrix([[6], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-8",
+      "assertions": [
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-9",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [3], [0]])",
+          "right": "Matrix([[1], [3], [0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-10",
+      "assertions": [
+        {
+          "left": "Matrix([[8], [4]])",
+          "right": "Matrix([[8], [4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[10], [5]])",
+          "right": "Matrix([[10], [5]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-example-2",
+      "assertions": [
+        {
+          "left": "9",
+          "right": "9"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [7], [0]])",
+          "right": "Matrix([[1], [7], [0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-2",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-3",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-4",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-5",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-6",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-7",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-8",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-9",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-10",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-example-2",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-example-3",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-1",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [1]])",
+          "right": "Matrix([[2], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 1], [0, 1]])",
+          "right": "Matrix([[1, 1], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-3",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [1]])",
+          "right": "Matrix([[2], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-4",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [1]])",
+          "right": "Matrix([[3], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-5",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 2], [0, 1]])",
+          "right": "Matrix([[1, 2], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-6",
+      "assertions": [
+        {
+          "left": "Matrix([[5], [2]])",
+          "right": "Matrix([[5], [2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-7",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [1]])",
+          "right": "Matrix([[4], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-8",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 3], [0, 1]])",
+          "right": "Matrix([[1, 3], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-9",
+      "assertions": [
+        {
+          "left": "Matrix([[10], [3]])",
+          "right": "Matrix([[10], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-10",
+      "assertions": [
+        {
+          "left": "Matrix([[5], [1]])",
+          "right": "Matrix([[5], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[6], [1]])",
+          "right": "Matrix([[6], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 6], [0, 1]])",
+          "right": "Matrix([[1, 6], [0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[50], [7]])",
+          "right": "Matrix([[50], [7]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-1",
+      "assertions": [
+        {
+          "left": "2*x**2 + 2*x + 1",
+          "right": "2*x**2 + 2*x + 1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-2",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-3",
+      "assertions": [
+        {
+          "left": "2*x**2 + 3*x + 1",
+          "right": "2*x**2 + 3*x + 1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-4",
+      "assertions": [
+        {
+          "left": "2*x**2 + 3*x + 2",
+          "right": "2*x**2 + 3*x + 2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-5",
+      "assertions": [
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-6",
+      "assertions": [
+        {
+          "left": "3*x**2 + 5*x + 2",
+          "right": "3*x**2 + 5*x + 2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-7",
+      "assertions": [
+        {
+          "left": "2*x**2 + 4*x + 3",
+          "right": "2*x**2 + 4*x + 3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-8",
+      "assertions": [
+        {
+          "left": "10",
+          "right": "10"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-9",
+      "assertions": [
+        {
+          "left": "4*x**2 + 7*x + 3",
+          "right": "4*x**2 + 7*x + 3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-10",
+      "assertions": [
+        {
+          "left": "2*x**2 + 5*x + 4",
+          "right": "2*x**2 + 5*x + 4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-example-1",
+      "assertions": [
+        {
+          "left": "2*x**2 + 6*x + 5",
+          "right": "2*x**2 + 6*x + 5"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-example-2",
+      "assertions": [
+        {
+          "left": "28",
+          "right": "28"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-example-3",
+      "assertions": [
+        {
+          "left": "8*x**2 + 15*x + 7",
+          "right": "8*x**2 + 15*x + 7"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-1",
+      "assertions": [
+        {
+          "left": "5",
+          "right": "5"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-3",
+      "assertions": [
+        {
+          "left": "3/5",
+          "right": "3/5"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-4",
+      "assertions": [
+        {
+          "left": "10",
+          "right": "10"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-5",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-6",
+      "assertions": [
+        {
+          "left": "3/5",
+          "right": "3/5"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-7",
+      "assertions": [
+        {
+          "left": "15",
+          "right": "15"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-8",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-9",
+      "assertions": [
+        {
+          "left": "3/5",
+          "right": "3/5"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-10",
+      "assertions": [
+        {
+          "left": "20",
+          "right": "20"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-example-1",
+      "assertions": [
+        {
+          "left": "25",
+          "right": "25"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-example-3",
+      "assertions": [
+        {
+          "left": "3/5",
+          "right": "3/5"
+        }
+      ]
+    },
+    {
+      "id": "projection-11",
+      "assertions": [
+        {
+          "left": "14",
+          "right": "14"
+        }
+      ]
+    },
+    {
+      "id": "projection-example-4",
+      "assertions": [
+        {
+          "left": "350",
+          "right": "350"
+        }
+      ]
+    },
+    {
+      "id": "projection-12",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "projection-example-5",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "projection-13",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "projection-example-6",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "Matrix([[0], [1]])",
+          "right": "Matrix([[0], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-2",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-3",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [1]])",
+          "right": "Matrix([[0], [0], [1]])"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-4",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "Matrix([[0], [1]])",
+          "right": "Matrix([[0], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-5",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-6",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [1]])",
+          "right": "Matrix([[0], [0], [1]])"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-7",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "Matrix([[0], [1]])",
+          "right": "Matrix([[0], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-8",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-9",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [1]])",
+          "right": "Matrix([[0], [0], [1]])"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-10",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "Matrix([[0], [1]])",
+          "right": "Matrix([[0], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "Matrix([[0], [1]])",
+          "right": "Matrix([[0], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-example-2",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [1]])",
+          "right": "Matrix([[0], [0], [1]])"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-1",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [4]])",
+          "right": "Matrix([[3], [4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [0]])",
+          "right": "Matrix([[1], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-3",
+      "assertions": [
+        {
+          "left": "a*(2*x + 1) + b",
+          "right": "a*(2*x + 1) + b"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-4",
+      "assertions": [
+        {
+          "left": "Matrix([[5], [4]])",
+          "right": "Matrix([[5], [4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-5",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [0]])",
+          "right": "Matrix([[2], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-6",
+      "assertions": [
+        {
+          "left": "a*(2*x + 2) + b",
+          "right": "a*(2*x + 2) + b"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-7",
+      "assertions": [
+        {
+          "left": "Matrix([[7], [4]])",
+          "right": "Matrix([[7], [4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-8",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [0]])",
+          "right": "Matrix([[3], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-9",
+      "assertions": [
+        {
+          "left": "a*(2*x + 3) + b",
+          "right": "a*(2*x + 3) + b"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-10",
+      "assertions": [
+        {
+          "left": "Matrix([[9], [4]])",
+          "right": "Matrix([[9], [4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[11], [4]])",
+          "right": "Matrix([[11], [4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[6], [0]])",
+          "right": "Matrix([[6], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-example-3",
+      "assertions": [
+        {
+          "left": "a*(2*x + 7) + b",
+          "right": "a*(2*x + 7) + b"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-2",
+      "assertions": [
+        {
+          "left": "Matrix([[a], [b]])",
+          "right": "Matrix([[a], [b]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-3",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-4",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-5",
+      "assertions": [
+        {
+          "left": "Matrix([[a], [b]])",
+          "right": "Matrix([[a], [b]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-6",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-7",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-8",
+      "assertions": [
+        {
+          "left": "Matrix([[a], [b]])",
+          "right": "Matrix([[a], [b]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-9",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-10",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[a], [b]])",
+          "right": "Matrix([[a], [b]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 1], [0, 2]])",
+          "right": "Matrix([[1, 1], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-2",
+      "assertions": [
+        {
+          "left": "Matrix([[0, -2], [1, 1]])",
+          "right": "Matrix([[0, -2], [1, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-3",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [2]])",
+          "right": "Matrix([[2], [2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-4",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 2], [0, 2]])",
+          "right": "Matrix([[1, 2], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-5",
+      "assertions": [
+        {
+          "left": "Matrix([[0, -2], [1, 2]])",
+          "right": "Matrix([[0, -2], [1, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-6",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [2]])",
+          "right": "Matrix([[4], [2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-7",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 3], [0, 2]])",
+          "right": "Matrix([[1, 3], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-8",
+      "assertions": [
+        {
+          "left": "Matrix([[0, -2], [1, 3]])",
+          "right": "Matrix([[0, -2], [1, 3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-9",
+      "assertions": [
+        {
+          "left": "Matrix([[6], [2]])",
+          "right": "Matrix([[6], [2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-10",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 4], [0, 2]])",
+          "right": "Matrix([[1, 4], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 5], [0, 2]])",
+          "right": "Matrix([[1, 5], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[0, -2], [1, 6]])",
+          "right": "Matrix([[0, -2], [1, 6]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[14], [2]])",
+          "right": "Matrix([[14], [2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 1], [0, 2]])",
+          "right": "Matrix([[1, 1], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-2",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-3",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-4",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 2], [0, 2]])",
+          "right": "Matrix([[1, 2], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-5",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-6",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-7",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 3], [0, 2]])",
+          "right": "Matrix([[1, 3], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-8",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-9",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-10",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 4], [0, 2]])",
+          "right": "Matrix([[1, 4], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 5], [0, 2]])",
+          "right": "Matrix([[1, 5], [0, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-example-2",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-example-3",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-1",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-2",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-3",
+      "assertions": [
+        {
+          "left": "2*exp(2*x)",
+          "right": "2*exp(2*x)"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-4",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-5",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-6",
+      "assertions": [
+        {
+          "left": "4*exp(2*x)",
+          "right": "4*exp(2*x)"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-7",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-8",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-9",
+      "assertions": [
+        {
+          "left": "6*exp(2*x)",
+          "right": "6*exp(2*x)"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-10",
+      "assertions": [
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-example-1",
+      "assertions": [
+        {
+          "left": "5",
+          "right": "5"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-example-2",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-1-1-example-3",
+      "assertions": [
+        {
+          "left": "14*exp(2*x)",
+          "right": "14*exp(2*x)"
+        },
+        {
+          "left": "7",
+          "right": "7"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-1",
+      "assertions": [
+        {
+          "left": "a**2*x**2 + a**2*x*y + a**2*y**2",
+          "right": "a**2*(x**2 + x*y + y**2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-2",
+      "assertions": [
+        {
+          "left": "log(x) + 2",
+          "right": "log(x) + 2"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-3",
+      "assertions": [
+        {
+          "left": "1 - (x**2 + 1)/(2*x**2)",
+          "right": "1 - (x**2 + 1)/(2*x**2)"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-4",
+      "assertions": [
+        {
+          "left": "a**2*x**2 + 2*a**2*x*y + a**2*y**2",
+          "right": "a**2*(x**2 + 2*x*y + y**2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-5",
+      "assertions": [
+        {
+          "left": "log(x) + 3",
+          "right": "log(x) + 3"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-6",
+      "assertions": [
+        {
+          "left": "1 - (x**2 + 2)/(2*x**2)",
+          "right": "1 - (x**2 + 2)/(2*x**2)"
+        },
+        {
+          "left": "3/2",
+          "right": "3/2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-7",
+      "assertions": [
+        {
+          "left": "a**2*x**2 + 3*a**2*x*y + a**2*y**2",
+          "right": "a**2*(x**2 + 3*x*y + y**2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-8",
+      "assertions": [
+        {
+          "left": "log(x) + 4",
+          "right": "log(x) + 4"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-9",
+      "assertions": [
+        {
+          "left": "1 - (x**2 + 3)/(2*x**2)",
+          "right": "1 - (x**2 + 3)/(2*x**2)"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-10",
+      "assertions": [
+        {
+          "left": "a**2*x**2 + 4*a**2*x*y + a**2*y**2",
+          "right": "a**2*(x**2 + 4*x*y + y**2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-example-1",
+      "assertions": [
+        {
+          "left": "a**2*x**2 + 5*a**2*x*y + a**2*y**2",
+          "right": "a**2*(x**2 + 5*x*y + y**2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-example-2",
+      "assertions": [
+        {
+          "left": "log(x) + 7",
+          "right": "log(x) + 7"
+        },
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-3-example-3",
+      "assertions": [
+        {
+          "left": "1 - (x**2 + 7)/(2*x**2)",
+          "right": "1 - (x**2 + 7)/(2*x**2)"
+        },
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-1",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "2*x + y",
+          "right": "2*x + y"
+        },
+        {
+          "left": "x + 2*y",
+          "right": "x + 2*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-2",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "2*x + y",
+          "right": "2*x + y"
+        },
+        {
+          "left": "x",
+          "right": "x"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-3",
+      "assertions": [
+        {
+          "left": "2*x",
+          "right": "2*x"
+        },
+        {
+          "left": "2*x*y + 1",
+          "right": "2*x*y + 1"
+        },
+        {
+          "left": "x**2 + 2*y",
+          "right": "x**2 + 2*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-4",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2*x + 2*y",
+          "right": "2*x + 2*y"
+        },
+        {
+          "left": "2*x + 2*y",
+          "right": "2*x + 2*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-5",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "4*x + y",
+          "right": "4*x + y"
+        },
+        {
+          "left": "x",
+          "right": "x"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-6",
+      "assertions": [
+        {
+          "left": "2*x",
+          "right": "2*x"
+        },
+        {
+          "left": "2*x*y + 2",
+          "right": "2*x*y + 2"
+        },
+        {
+          "left": "x**2 + 2*y",
+          "right": "x**2 + 2*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-7",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "2*x + 3*y",
+          "right": "2*x + 3*y"
+        },
+        {
+          "left": "3*x + 2*y",
+          "right": "3*x + 2*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-8",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "6*x + y",
+          "right": "6*x + y"
+        },
+        {
+          "left": "x",
+          "right": "x"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-9",
+      "assertions": [
+        {
+          "left": "2*x",
+          "right": "2*x"
+        },
+        {
+          "left": "2*x*y + 3",
+          "right": "2*x*y + 3"
+        },
+        {
+          "left": "x**2 + 2*y",
+          "right": "x**2 + 2*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-10",
+      "assertions": [
+        {
+          "left": "4",
+          "right": "4"
+        },
+        {
+          "left": "2*x + 4*y",
+          "right": "2*x + 4*y"
+        },
+        {
+          "left": "4*x + 2*y",
+          "right": "4*x + 2*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-example-1",
+      "assertions": [
+        {
+          "left": "5",
+          "right": "5"
+        },
+        {
+          "left": "2*x + 5*y",
+          "right": "2*x + 5*y"
+        },
+        {
+          "left": "5*x + 2*y",
+          "right": "5*x + 2*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-example-2",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "12*x + y",
+          "right": "12*x + y"
+        },
+        {
+          "left": "x",
+          "right": "x"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-2-4-example-3",
+      "assertions": [
+        {
+          "left": "2*x",
+          "right": "2*x"
+        },
+        {
+          "left": "2*x*y + 7",
+          "right": "2*x*y + 7"
+        },
+        {
+          "left": "x**2 + 2*y",
+          "right": "x**2 + 2*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "x",
+          "right": "x"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-4",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-5",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-6",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2*x",
+          "right": "2*x"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-7",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-8",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-9",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "3*x",
+          "right": "3*x"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-10",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-example-2",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-example-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "7*x",
+          "right": "7*x"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "5",
+          "right": "5"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-4",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-5",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-6",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-7",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-8",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "7",
+          "right": "7"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-9",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-10",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "4",
+          "right": "4"
+        },
+        {
+          "left": "5",
+          "right": "5"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "5",
+          "right": "5"
+        },
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "6",
+          "right": "6"
+        },
+        {
+          "left": "10",
+          "right": "10"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-1-example-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-1",
+      "assertions": [
+        {
+          "left": "exp(3*x)",
+          "right": "exp(3*x)"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-3",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "sin(x)**2 + cos(x)**2"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-4",
+      "assertions": [
+        {
+          "left": "2*exp(4*x)",
+          "right": "2*exp(4*x)"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-5",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-6",
+      "assertions": [
+        {
+          "left": "2",
+          "right": "2*sin(2*x)**2 + 2*cos(2*x)**2"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-7",
+      "assertions": [
+        {
+          "left": "3*exp(5*x)",
+          "right": "3*exp(5*x)"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-8",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-9",
+      "assertions": [
+        {
+          "left": "3",
+          "right": "3*sin(3*x)**2 + 3*cos(3*x)**2"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-10",
+      "assertions": [
+        {
+          "left": "4*exp(6*x)",
+          "right": "4*exp(6*x)"
+        },
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-example-1",
+      "assertions": [
+        {
+          "left": "5*exp(7*x)",
+          "right": "5*exp(7*x)"
+        },
+        {
+          "left": "5",
+          "right": "5"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-2-example-3",
+      "assertions": [
+        {
+          "left": "7",
+          "right": "7*sin(7*x)**2 + 7*cos(7*x)**2"
+        },
+        {
+          "left": "7",
+          "right": "7"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-2",
+      "assertions": [
+        {
+          "left": "C_1*cos(x) + C_2*sin(x) - (C_1*cos(x) + C_2*sin(x)) + 1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-3",
+      "assertions": [
+        {
+          "left": "exp(x)",
+          "right": "exp(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-4",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-5",
+      "assertions": [
+        {
+          "left": "C_1*cos(x) + C_2*sin(x) - (C_1*cos(x) + C_2*sin(x)) + 2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-6",
+      "assertions": [
+        {
+          "left": "2*exp(x)",
+          "right": "2*exp(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-7",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-8",
+      "assertions": [
+        {
+          "left": "C_1*cos(x) + C_2*sin(x) - (C_1*cos(x) + C_2*sin(x)) + 3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-9",
+      "assertions": [
+        {
+          "left": "3*exp(x)",
+          "right": "3*exp(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-10",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-example-2",
+      "assertions": [
+        {
+          "left": "C_1*cos(x) + C_2*sin(x) - (C_1*cos(x) + C_2*sin(x)) + 6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-1-3-example-3",
+      "assertions": [
+        {
+          "left": "7*exp(x)",
+          "right": "7*exp(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-1",
+      "assertions": [
+        {
+          "left": "exp(2*x)",
+          "right": "exp(2*x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-2",
+      "assertions": [
+        {
+          "left": "x**2",
+          "right": "x**2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-3",
+      "assertions": [
+        {
+          "left": "cos(x)",
+          "right": "cos(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-4",
+      "assertions": [
+        {
+          "left": "2*exp(2*x)",
+          "right": "2*exp(2*x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-5",
+      "assertions": [
+        {
+          "left": "2*x**2",
+          "right": "2*x**2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-6",
+      "assertions": [
+        {
+          "left": "2*cos(x)",
+          "right": "2*cos(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-7",
+      "assertions": [
+        {
+          "left": "3*exp(2*x)",
+          "right": "3*exp(2*x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-8",
+      "assertions": [
+        {
+          "left": "3*x**2",
+          "right": "3*x**2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-9",
+      "assertions": [
+        {
+          "left": "3*x*sin(x)/2 + 3*(-x*sin(x)/2 + cos(x))",
+          "right": "3*cos(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-10",
+      "assertions": [
+        {
+          "left": "4*exp(2*x)",
+          "right": "4*exp(2*x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-example-1",
+      "assertions": [
+        {
+          "left": "5*exp(2*x)",
+          "right": "5*exp(2*x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-example-2",
+      "assertions": [
+        {
+          "left": "6*x**2",
+          "right": "6*x**2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-4-example-3",
+      "assertions": [
+        {
+          "left": "7*x*sin(x)/2 + 7*(-x*sin(x)/2 + cos(x))",
+          "right": "7*cos(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-1",
+      "assertions": [
+        {
+          "left": "-3*x**2 + 6*x - 1",
+          "right": "-3*x**2 + 6*x - 1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-2",
+      "assertions": [
+        {
+          "left": "2*exp(3*x)",
+          "right": "2*exp(3*x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-3",
+      "assertions": [
+        {
+          "left": "z**2 - 3*z + 2",
+          "right": "z**2 - 3*z + 2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-4",
+      "assertions": [
+        {
+          "left": "-3*x**2 + 6*x - 2",
+          "right": "-3*x**2 + 6*x - 2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-5",
+      "assertions": [
+        {
+          "left": "6*exp(4*x)",
+          "right": "6*exp(4*x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-6",
+      "assertions": [
+        {
+          "left": "z**2 - 5*z + 6",
+          "right": "z**2 - 5*z + 6"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-7",
+      "assertions": [
+        {
+          "left": "-3*x**2 + 6*x - 3",
+          "right": "-3*x**2 + 6*x - 3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-8",
+      "assertions": [
+        {
+          "left": "12*exp(5*x)",
+          "right": "12*exp(5*x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-9",
+      "assertions": [
+        {
+          "left": "z**2 - 7*z + 12",
+          "right": "z**2 - 7*z + 12"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-10",
+      "assertions": [
+        {
+          "left": "-3*x**2 + 6*x - 4",
+          "right": "-3*x**2 + 6*x - 4"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-example-1",
+      "assertions": [
+        {
+          "left": "-3*x**2 + 6*x - 5",
+          "right": "-3*x**2 + 6*x - 5"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-example-2",
+      "assertions": [
+        {
+          "left": "42*exp(8*x)",
+          "right": "42*exp(8*x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-5-example-3",
+      "assertions": [
+        {
+          "left": "z**2 - 15*z + 56",
+          "right": "z**2 - 15*z + 56"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-3",
+      "assertions": [
+        {
+          "left": "-x*exp(x)/2 + (x/2 + 1)*exp(x)",
+          "right": "exp(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-4",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-5",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-6",
+      "assertions": [
+        {
+          "left": "-x*exp(x) + (x + 2)*exp(x)",
+          "right": "2*exp(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-7",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-8",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-9",
+      "assertions": [
+        {
+          "left": "-3*x*exp(x)/2 + 3*(x/2 + 1)*exp(x)",
+          "right": "3*exp(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-10",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "24",
+          "right": "24"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "120",
+          "right": "120"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-4-6-example-3",
+      "assertions": [
+        {
+          "left": "-7*x*exp(x)/2 + 7*(x/2 + 1)*exp(x)",
+          "right": "7*exp(x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-4",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-5",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-6",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-7",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-8",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-9",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-10",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-example-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [1], [1/2], [1/6]])",
+          "right": "Matrix([[1], [1], [1/2], [1/6]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-2",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-3",
+      "assertions": [
+        {
+          "left": "exp(x)",
+          "right": "exp(x)"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-4",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [2], [2], [4/3]])",
+          "right": "Matrix([[1], [2], [2], [4/3]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-5",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-6",
+      "assertions": [
+        {
+          "left": "2*exp(2*x)",
+          "right": "2*exp(2*x)"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-7",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [3], [9/2], [9/2]])",
+          "right": "Matrix([[1], [3], [9/2], [9/2]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-8",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-9",
+      "assertions": [
+        {
+          "left": "3*exp(3*x)",
+          "right": "3*exp(3*x)"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-10",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [4], [8], [32/3]])",
+          "right": "Matrix([[1], [4], [8], [32/3]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [5], [25/2], [125/6]])",
+          "right": "Matrix([[1], [5], [25/2], [125/6]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-example-2",
+      "assertions": [
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-2-example-3",
+      "assertions": [
+        {
+          "left": "7*exp(7*x)",
+          "right": "7*exp(7*x)"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-1",
+      "assertions": [
+        {
+          "left": "1/(s + 1)",
+          "right": "1/(s + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-2",
+      "assertions": [
+        {
+          "left": "2/s**3",
+          "right": "2/s**3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-3",
+      "assertions": [
+        {
+          "left": "1/(s**2 + 1)",
+          "right": "1/(s**2 + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-4",
+      "assertions": [
+        {
+          "left": "1/(s + 2)",
+          "right": "1/(s + 2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-5",
+      "assertions": [
+        {
+          "left": "6/s**4",
+          "right": "6/s**4"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-6",
+      "assertions": [
+        {
+          "left": "2/(s**2 + 4)",
+          "right": "2/(s**2 + 4)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-7",
+      "assertions": [
+        {
+          "left": "1/(s + 3)",
+          "right": "1/(s + 3)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-8",
+      "assertions": [
+        {
+          "left": "s**(-2)",
+          "right": "s**(-2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-9",
+      "assertions": [
+        {
+          "left": "3/(s**2 + 9)",
+          "right": "3/(s**2 + 9)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-10",
+      "assertions": [
+        {
+          "left": "1/(s + 4)",
+          "right": "1/(s + 4)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-example-1",
+      "assertions": [
+        {
+          "left": "1/(s + 5)",
+          "right": "1/(s + 5)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-example-2",
+      "assertions": [
+        {
+          "left": "s**(-2)",
+          "right": "s**(-2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-1-example-3",
+      "assertions": [
+        {
+          "left": "7/(s**2 + 49)",
+          "right": "7/(s**2 + 49)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-1",
+      "assertions": [
+        {
+          "left": "1/(s + 1)",
+          "right": "1/(s + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-2",
+      "assertions": [
+        {
+          "left": "1/(s**2 + 1)",
+          "right": "1/(s**2 + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-3",
+      "assertions": [
+        {
+          "left": "-1/(s + 2) + 1/(s + 1)",
+          "right": "1/((s + 1)*(s + 2))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-4",
+      "assertions": [
+        {
+          "left": "(s + 2)**(-2)",
+          "right": "(s + 2)**(-2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-5",
+      "assertions": [
+        {
+          "left": "2/(s**2 + 4)",
+          "right": "2/(s**2 + 4)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-6",
+      "assertions": [
+        {
+          "left": "-1/(s + 3) + 1/(s + 2)",
+          "right": "1/((s + 2)*(s + 3))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-7",
+      "assertions": [
+        {
+          "left": "1/(s + 3)",
+          "right": "1/(s + 3)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-8",
+      "assertions": [
+        {
+          "left": "(s + 3)**(-2)",
+          "right": "(s + 3)**(-2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-9",
+      "assertions": [
+        {
+          "left": "-1/(s + 4) + 1/(s + 3)",
+          "right": "1/((s + 3)*(s + 4))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-10",
+      "assertions": [
+        {
+          "left": "1/(s + 4)",
+          "right": "1/(s + 4)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-example-1",
+      "assertions": [
+        {
+          "left": "1/(s + 5)",
+          "right": "1/(s + 5)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-example-2",
+      "assertions": [
+        {
+          "left": "6/(s**2 + 36)",
+          "right": "6/(s**2 + 36)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-2-example-3",
+      "assertions": [
+        {
+          "left": "-1/(s + 8) + 1/(s + 7)",
+          "right": "1/((s + 7)*(s + 8))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-1",
+      "assertions": [
+        {
+          "left": "(s + 1)/((s + 1)**2 + 4)",
+          "right": "(s + 1)/((s + 1)**2 + 4)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-2",
+      "assertions": [
+        {
+          "left": "exp(-s)/(s**2 + 1)",
+          "right": "exp(-s)/(s**2 + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-3",
+      "assertions": [
+        {
+          "left": "(s + 1)**(-2)",
+          "right": "(s + 1)**(-2)"
+        },
+        {
+          "left": "(s + 1)**(-2)",
+          "right": "(s + 1)**(-2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-4",
+      "assertions": [
+        {
+          "left": "(2/s + s**(-2))*exp(-2*s)",
+          "right": "(2/s + s**(-2))*exp(-2*s)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-5",
+      "assertions": [
+        {
+          "left": "exp(-2*s)/(s**2 + 1)",
+          "right": "exp(-2*s)/(s**2 + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-6",
+      "assertions": [
+        {
+          "left": "(s + 2)**(-2)",
+          "right": "(s + 2)**(-2)"
+        },
+        {
+          "left": "(s + 2)**(-2)",
+          "right": "(s + 2)**(-2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-7",
+      "assertions": [
+        {
+          "left": "(s + 3)/((s + 3)**2 + 4)",
+          "right": "(s + 3)/((s + 3)**2 + 4)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-8",
+      "assertions": [
+        {
+          "left": "(3/s + s**(-2))*exp(-3*s)",
+          "right": "(3/s + s**(-2))*exp(-3*s)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-9",
+      "assertions": [
+        {
+          "left": "(s + 3)**(-2)",
+          "right": "(s + 3)**(-2)"
+        },
+        {
+          "left": "(s + 3)**(-2)",
+          "right": "(s + 3)**(-2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-10",
+      "assertions": [
+        {
+          "left": "(s + 4)/((s + 4)**2 + 4)",
+          "right": "(s + 4)/((s + 4)**2 + 4)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-example-1",
+      "assertions": [
+        {
+          "left": "(s + 5)/((s + 5)**2 + 4)",
+          "right": "(s + 5)/((s + 5)**2 + 4)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-example-2",
+      "assertions": [
+        {
+          "left": "exp(-6*s)/(s**2 + 1)",
+          "right": "exp(-6*s)/(s**2 + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-3-example-3",
+      "assertions": [
+        {
+          "left": "(s + 7)**(-2)",
+          "right": "(s + 7)**(-2)"
+        },
+        {
+          "left": "(s + 7)**(-2)",
+          "right": "(s + 7)**(-2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-1",
+      "assertions": [
+        {
+          "left": "-1/(s + 1)",
+          "right": "s/(s + 1) - 1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-2",
+      "assertions": [
+        {
+          "left": "-1/(s + 1) + 1/s",
+          "right": "1/(s*(s + 1))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-3",
+      "assertions": [
+        {
+          "left": "exp(s)/(s*(exp(s) + 1))",
+          "right": "1/(s*(1 + exp(-s)))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-4",
+      "assertions": [
+        {
+          "left": "-1/(2*(s + 2)) + 1/(2*s)",
+          "right": "1/(s*(s + 2))"
+        },
+        {
+          "left": "1/2 - exp(-2*t)/2",
+          "right": "1/2 - exp(-2*t)/2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-5",
+      "assertions": [
+        {
+          "left": "-1/(2*(s + 2)) + 1/(2*s)",
+          "right": "1/(s*(s + 2))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-6",
+      "assertions": [
+        {
+          "left": "exp(2*s)/(s*(exp(2*s) + 1))",
+          "right": "1/(s*(1 + exp(-2*s)))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-7",
+      "assertions": [
+        {
+          "left": "-3/(s + 1)",
+          "right": "3*s/(s + 1) - 3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-8",
+      "assertions": [
+        {
+          "left": "-1/(3*(s + 3)) + 1/(3*s)",
+          "right": "1/(s*(s + 3))"
+        },
+        {
+          "left": "1/3 - exp(-3*t)/3",
+          "right": "1/3 - exp(-3*t)/3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-9",
+      "assertions": [
+        {
+          "left": "exp(3*s)/(s*(exp(3*s) + 1))",
+          "right": "1/(s*(1 + exp(-3*s)))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-10",
+      "assertions": [
+        {
+          "left": "-4/(s + 1)",
+          "right": "4*s/(s + 1) - 4"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-example-1",
+      "assertions": [
+        {
+          "left": "-5/(s + 1)",
+          "right": "5*s/(s + 1) - 5"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-example-2",
+      "assertions": [
+        {
+          "left": "-1/(6*(s + 6)) + 1/(6*s)",
+          "right": "1/(s*(s + 6))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-4-example-3",
+      "assertions": [
+        {
+          "left": "exp(7*s)/(s*(exp(7*s) + 1))",
+          "right": "1/(s*(1 + exp(-7*s)))"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1/(s + 2)",
+          "right": "1/(s + 2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1/(s**2 + 1)",
+          "right": "1/(s**2 + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-3",
+      "assertions": [
+        {
+          "left": "-1/(s + 1) + 1/s",
+          "right": "1/(s*(s + 1))"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-4",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2/(s + 2)",
+          "right": "2/(s + 2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-5",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2/(s**2 + 1)",
+          "right": "2/(s**2 + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-6",
+      "assertions": [
+        {
+          "left": "-1/(s + 1) + 1/s",
+          "right": "1/(s*(s + 1))"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-7",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "3/(s + 2)",
+          "right": "3/(s + 2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-8",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "3/(s**2 + 1)",
+          "right": "3/(s**2 + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-9",
+      "assertions": [
+        {
+          "left": "-1/(s + 1) + 1/s",
+          "right": "1/(s*(s + 1))"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-10",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "4",
+          "right": "4"
+        },
+        {
+          "left": "4/(s + 2)",
+          "right": "4/(s + 2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "5",
+          "right": "5"
+        },
+        {
+          "left": "5/(s + 2)",
+          "right": "5/(s + 2)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "6",
+          "right": "6"
+        },
+        {
+          "left": "6/(s**2 + 1)",
+          "right": "6/(s**2 + 1)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-7-5-example-3",
+      "assertions": [
+        {
+          "left": "-1/(s + 1) + 1/s",
+          "right": "1/(s*(s + 1))"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-1",
+      "assertions": [
+        {
+          "left": "-2*x - y",
+          "right": "-2*x - y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-2",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [3]])",
+          "right": "Matrix([[3], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-3",
+      "assertions": [
+        {
+          "left": "exp(t)",
+          "right": "exp(t)"
+        },
+        {
+          "left": "exp(t)",
+          "right": "exp(t)"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-4",
+      "assertions": [
+        {
+          "left": "-2*x - 2*y",
+          "right": "-2*x - 2*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-5",
+      "assertions": [
+        {
+          "left": "Matrix([[5], [3]])",
+          "right": "Matrix([[5], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-6",
+      "assertions": [
+        {
+          "left": "exp(t)",
+          "right": "exp(t)"
+        },
+        {
+          "left": "exp(t) - exp(-t)",
+          "right": "exp(t) - exp(-t)"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-7",
+      "assertions": [
+        {
+          "left": "-2*x - 3*y",
+          "right": "-2*x - 3*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-8",
+      "assertions": [
+        {
+          "left": "Matrix([[7], [3]])",
+          "right": "Matrix([[7], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-9",
+      "assertions": [
+        {
+          "left": "exp(t)",
+          "right": "exp(t)"
+        },
+        {
+          "left": "exp(t) - 2*exp(-t)",
+          "right": "exp(t) - 2*exp(-t)"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-10",
+      "assertions": [
+        {
+          "left": "-2*x - 4*y",
+          "right": "-2*x - 4*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-example-1",
+      "assertions": [
+        {
+          "left": "-2*x - 5*y",
+          "right": "-2*x - 5*y"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[13], [3]])",
+          "right": "Matrix([[13], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-3-example-3",
+      "assertions": [
+        {
+          "left": "exp(t)",
+          "right": "exp(t)"
+        },
+        {
+          "left": "exp(t) - 6*exp(-t)",
+          "right": "exp(t) - 6*exp(-t)"
+        },
+        {
+          "left": "7",
+          "right": "7"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-1",
+      "assertions": [
+        {
+          "left": "Matrix([[x + y], [-2*x + 3*y]])",
+          "right": "Matrix([[x + y], [-2*x + 3*y]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-2",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [1]])",
+          "right": "Matrix([[2], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-3",
+      "assertions": [
+        {
+          "left": "Matrix([[x + y + sin(t)], [t - 2*x + 3*y]])",
+          "right": "Matrix([[x + y + sin(t)], [t - 2*x + 3*y]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-4",
+      "assertions": [
+        {
+          "left": "Matrix([[x + 2*y], [-2*x + 3*y]])",
+          "right": "Matrix([[x + 2*y], [-2*x + 3*y]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-5",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [-1]])",
+          "right": "Matrix([[4], [-1]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-6",
+      "assertions": [
+        {
+          "left": "Matrix([[x + 2*y + sin(t)], [2*t - 2*x + 3*y]])",
+          "right": "Matrix([[x + 2*y + sin(t)], [2*t - 2*x + 3*y]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-7",
+      "assertions": [
+        {
+          "left": "Matrix([[x + 3*y], [-2*x + 3*y]])",
+          "right": "Matrix([[x + 3*y], [-2*x + 3*y]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-8",
+      "assertions": [
+        {
+          "left": "Matrix([[6], [-3]])",
+          "right": "Matrix([[6], [-3]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-9",
+      "assertions": [
+        {
+          "left": "Matrix([[x + 3*y + sin(t)], [3*t - 2*x + 3*y]])",
+          "right": "Matrix([[x + 3*y + sin(t)], [3*t - 2*x + 3*y]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-10",
+      "assertions": [
+        {
+          "left": "Matrix([[x + 4*y], [-2*x + 3*y]])",
+          "right": "Matrix([[x + 4*y], [-2*x + 3*y]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[x + 5*y], [-2*x + 3*y]])",
+          "right": "Matrix([[x + 5*y], [-2*x + 3*y]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[12], [-9]])",
+          "right": "Matrix([[12], [-9]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-5-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[x + 7*y + sin(t)], [7*t - 2*x + 3*y]])",
+          "right": "Matrix([[x + 7*y + sin(t)], [7*t - 2*x + 3*y]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-1",
+      "assertions": [
+        {
+          "left": "Matrix([[C_1*exp(t)], [-C_2*exp(-t)]])",
+          "right": "Matrix([[C_1*exp(t)], [-C_2*exp(-t)]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-2",
+      "assertions": [
+        {
+          "left": "Matrix([[C_2*exp(t) + (C_1 + C_2*t)*exp(t)], [C_2*exp(t)]])",
+          "right": "Matrix([[C_2*exp(t) + (C_1 + C_2*t)*exp(t)], [C_2*exp(t)]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-3",
+      "assertions": [
+        {
+          "left": "Matrix([[-C_1*sin(t) - C_2*cos(t)], [C_1*cos(t) - C_2*sin(t)]])",
+          "right": "Matrix([[-C_1*sin(t) - C_2*cos(t)], [C_1*cos(t) - C_2*sin(t)]])"
+        },
+        {
+          "left": "C_1**2 + C_2**2",
+          "right": "C_1**2 + C_2**2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-4",
+      "assertions": [
+        {
+          "left": "Matrix([[C_1*exp(t)], [-2*C_2*exp(-2*t)]])",
+          "right": "Matrix([[C_1*exp(t)], [-2*C_2*exp(-2*t)]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-5",
+      "assertions": [
+        {
+          "left": "Matrix([[2*C_2*exp(t) + (C_1 + 2*C_2*t)*exp(t)], [C_2*exp(t)]])",
+          "right": "Matrix([[2*C_2*exp(t) + (C_1 + 2*C_2*t)*exp(t)], [C_2*exp(t)]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-6",
+      "assertions": [
+        {
+          "left": "Matrix([[-2*C_1*sin(2*t) - 2*C_2*cos(2*t)], [2*C_1*cos(2*t) - 2*C_2*sin(2*t)]])",
+          "right": "Matrix([[-2*C_1*sin(2*t) - 2*C_2*cos(2*t)], [2*C_1*cos(2*t) - 2*C_2*sin(2*t)]])"
+        },
+        {
+          "left": "C_1**2 + C_2**2",
+          "right": "C_1**2 + C_2**2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-7",
+      "assertions": [
+        {
+          "left": "Matrix([[C_1*exp(t)], [-3*C_2*exp(-3*t)]])",
+          "right": "Matrix([[C_1*exp(t)], [-3*C_2*exp(-3*t)]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-8",
+      "assertions": [
+        {
+          "left": "Matrix([[3*C_2*exp(t) + (C_1 + 3*C_2*t)*exp(t)], [C_2*exp(t)]])",
+          "right": "Matrix([[3*C_2*exp(t) + (C_1 + 3*C_2*t)*exp(t)], [C_2*exp(t)]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-9",
+      "assertions": [
+        {
+          "left": "Matrix([[-3*C_1*sin(3*t) - 3*C_2*cos(3*t)], [3*C_1*cos(3*t) - 3*C_2*sin(3*t)]])",
+          "right": "Matrix([[-3*C_1*sin(3*t) - 3*C_2*cos(3*t)], [3*C_1*cos(3*t) - 3*C_2*sin(3*t)]])"
+        },
+        {
+          "left": "C_1**2 + C_2**2",
+          "right": "C_1**2 + C_2**2"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-10",
+      "assertions": [
+        {
+          "left": "Matrix([[C_1*exp(t)], [-4*C_2*exp(-4*t)]])",
+          "right": "Matrix([[C_1*exp(t)], [-4*C_2*exp(-4*t)]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[C_1*exp(t)], [-5*C_2*exp(-5*t)]])",
+          "right": "Matrix([[C_1*exp(t)], [-5*C_2*exp(-5*t)]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[6*C_2*exp(t) + (C_1 + 6*C_2*t)*exp(t)], [C_2*exp(t)]])",
+          "right": "Matrix([[6*C_2*exp(t) + (C_1 + 6*C_2*t)*exp(t)], [C_2*exp(t)]])"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-8-6-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[-7*C_1*sin(7*t) - 7*C_2*cos(7*t)], [7*C_1*cos(7*t) - 7*C_2*sin(7*t)]])",
+          "right": "Matrix([[-7*C_1*sin(7*t) - 7*C_2*cos(7*t)], [7*C_1*cos(7*t) - 7*C_2*sin(7*t)]])"
+        },
+        {
+          "left": "C_1**2 + C_2**2",
+          "right": "C_1**2 + C_2**2"
+        }
+      ]
+    }
+  ]
+}

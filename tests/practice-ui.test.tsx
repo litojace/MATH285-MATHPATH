@@ -4,9 +4,14 @@ import {MemoryRouter,Route,Routes} from 'react-router-dom';
 import {ProgressProvider} from '../src/lib/store';
 import {LessonPage} from '../src/pages/LessonPage';
 
-vi.mock('../src/components/Visualization',()=>({Visualization:()=>null}));
+vi.mock('../src/components/Visualization',()=>({Visualization:()=> <div data-testid="lesson-visualization"/>}));
 
 describe('lesson practice',()=>{
+ it('does not show an unrelated default vector visualization on a Laplace lesson',()=>{
+  render(<MemoryRouter initialEntries={['/lessons/differential-equations-7-1']}><ProgressProvider><Routes><Route path="/lessons/:lessonId" element={<LessonPage/>}/></Routes></ProgressProvider></MemoryRouter>);
+  expect(screen.getByRole('heading',{level:1,name:'Laplace Transform'})).toBeInTheDocument();
+  expect(screen.queryByTestId('lesson-visualization')).not.toBeInTheDocument();
+ });
  it('has no tutor mode and keeps solutions hidden until explicitly opened',()=>{
   localStorage.clear();
   render(<MemoryRouter initialEntries={['/lessons/systems']}><ProgressProvider><Routes><Route path="/lessons/:lessonId" element={<LessonPage/>}/></Routes></ProgressProvider></MemoryRouter>);

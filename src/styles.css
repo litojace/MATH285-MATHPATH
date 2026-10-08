@@ -34,3 +34,9 @@
 .practice-stack{width:100%;min-width:0;grid-template-columns:minmax(0,1fr)}
 .exercise{min-width:0}
 .exercise .button{max-width:100%}
+.curriculum-copy{min-width:0}
+.lesson-title-row h1,.curriculum-copy h3{overflow-wrap:anywhere}
+.steps li>div:last-child{min-width:0}
+.lesson-section>div,.formula-card{min-width:0}
+.formula-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:900px){.formula-grid{grid-template-columns:minmax(0,1fr)}}

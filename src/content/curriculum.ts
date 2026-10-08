@@ -56,5 +56,4 @@ export const curriculum:Topic[]=[
  de('Chapter 8 — Systems of Differential Equations','8.6','Homogeneous Linear Systems','Use eigenvalues and eigenvectors to construct solutions of constant-coefficient homogeneous systems.',['characteristic equation','real eigenvalue','repeated eigenvalue','complex eigenvalue','eigenvector','general solution'],['differential-equations-8-5','linear-algebra-7-1'],String.raw`X'=AX,\qquad X=Ke^{\lambda t}`,{fileName:'8.6.pdf',pageNumbers:[1,2,3,4,5,6,7,8,9]}),
  de('Chapter 9 — Numerical Methods','9.2','Euler’s Methods','Approximate a solution by repeatedly following the differential equation’s local slope.',['Euler’s method','step size','slope approximation','iterative calculation','numerical error'],['differential-equations-1-1'],String.raw`x_{n+1}=x_n+h,\qquad y_{n+1}=y_n+hf(x_n,y_n)`,{fileName:'6.2.pdf',pageNumbers:[8]})
 ];
-// Authoring plan only: these entries are not complete lessons or published content.
-// Source page ranges are provisional until the corresponding lesson is reviewed.
+// Course organization metadata. Complete authored lessons are generated into course-lessons.json.
