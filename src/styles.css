@@ -40,3 +40,45 @@
 .lesson-section>div,.formula-card{min-width:0}
 .formula-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:900px){.formula-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Search suggestions share the same behavior in the header, home, and search page. */
+.hero{overflow:visible}.hero-visual{overflow:hidden}
+.search-box>svg,.page-search>svg{flex-shrink:0;color:var(--muted)}
+.search-box .search-clear,.page-search .search-clear{display:grid;place-items:center;flex-shrink:0;width:28px;height:28px;padding:0;border:0;border-radius:7px;background:transparent;color:var(--muted)}
+.search-clear:hover{background:var(--surface-2);color:var(--text)}
+.page-search-wrap{max-width:850px;margin-top:30px}
+.page-search-wrap .page-search{margin-top:0}
+.search-page .page-search{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto}
+.search-page .page-search input{grid-column:2;grid-row:1;width:100%}
+.search-page .page-search .search-clear{grid-column:3;grid-row:1}
+.search-page .page-search .button{grid-column:4;grid-row:1}
+.suggestions{z-index:60;padding:0;overflow:hidden;border-radius:16px;box-shadow:0 18px 50px #00000024}
+.suggestions.above{top:auto;bottom:calc(100% + 8px)}
+.desktop-search .suggestions{left:auto;right:0;width:390px;max-width:calc(100vw - 32px)}
+.suggestions-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:.75rem;color:var(--muted)}
+.suggestions-heading>span:first-child{font-weight:800;color:var(--text)}
+.suggestions-list{max-height:min(340px,45dvh);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--line) transparent;scroll-padding-block:6px;padding:6px}
+.suggestions-list .suggestion{align-items:center;gap:16px;padding:12px 10px;border-radius:9px}
+.suggestion-content{display:grid;gap:4px;min-width:0}
+.suggestion-content strong{font-size:.88rem;line-height:1.4;font-weight:700}
+.suggestion-content small{font-size:.74rem;line-height:1.4}
+.suggestion>svg{flex-shrink:0;color:var(--muted)}
+.suggestion.active,.suggestions .suggestion:hover{background:var(--blue-2)}
+.suggestion.active>svg{color:var(--blue)}
+.suggestions .suggestions-footer{align-items:center;justify-content:space-between;border-top:1px solid var(--line);border-radius:0;padding:12px 16px;color:var(--blue);font-size:.82rem;font-weight:750}
+.suggestions .suggestions-empty{padding:18px 16px;font-size:.9rem}
+.suggestions-list:empty{display:none}
+.prerequisite-box{margin-top:28px;padding:22px;background:var(--surface-2);border:1px solid var(--line);border-radius:18px}
+.prerequisite-heading{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.prerequisite-icon{display:grid;place-items:center;width:40px;height:40px;flex-shrink:0;border-radius:12px;background:var(--blue-2);color:var(--blue)}
+.prerequisite-heading h3{margin:0 0 4px;font-size:1rem;line-height:1.4;letter-spacing:-.01em}
+.prerequisite-heading p{margin:0;font-size:.83rem;line-height:1.5}
+.prerequisite-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:10px}
+.prerequisite-link{display:flex;align-items:center;gap:12px;min-width:0;padding:16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;transition:border-color .15s,box-shadow .15s}
+.prerequisite-link:hover{border-color:var(--blue);box-shadow:0 3px 12px #2563eb12}
+.prerequisite-section{flex-shrink:0;padding:5px 8px;border-radius:7px;background:var(--blue-2);color:var(--blue);font-size:.75rem;font-weight:800}
+.prerequisite-content{display:grid;gap:4px;min-width:0;flex:1}
+.prerequisite-content small{font-size:.7rem;line-height:1.4;color:var(--muted)}
+.prerequisite-content strong{font-size:.9rem;line-height:1.45;overflow-wrap:anywhere}
+.prerequisite-link>svg{flex-shrink:0;color:var(--blue)}
+@media(max-width:400px){.search-page .page-search{grid-template-columns:auto minmax(0,1fr) auto}.search-page .page-search .button{grid-column:1/-1;grid-row:2;width:100%}.prerequisite-box{padding:16px}.prerequisite-link{gap:10px;padding:12px}.prerequisite-section{padding:4px 6px}.prerequisite-heading{align-items:flex-start}}

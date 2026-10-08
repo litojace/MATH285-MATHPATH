@@ -1,8 +1,8 @@
 import {useDeferredValue,useEffect,useState} from 'react';
 import {Link,useSearchParams} from 'react-router-dom';
-import {ArrowRight,Search,Sparkles} from 'lucide-react';
+import {ArrowRight,Sparkles} from 'lucide-react';
 import {searchLessons} from '../lib/search';
-import {Highlight} from '../components/Search';
+import {Highlight,SearchBox} from '../components/Search';
 
 export function SearchPage(){
  const [params,setParams]=useSearchParams();
@@ -16,11 +16,7 @@ export function SearchPage(){
   <span className="eyebrow blue">Topic discovery</span>
   <h1>Find the idea behind the problem.</h1>
   <p className="lead">Start typing and the lesson library filters instantly. Search by topic, abbreviation, formula, prerequisite, or a recognizable equation.</p>
-  <form className="page-search" onSubmit={e=>{e.preventDefault();setParams(liveQuery?{q:liveQuery}:{});}}>
-   <Search/><label className="sr-only" htmlFor="full-search">Search all lesson content</label>
-   <input id="full-search" name="q" value={value} onChange={e=>setValue(e.target.value)} placeholder="Try ‘eigen’, ‘RREF’, or ‘dy/dx + 2y = 6’" autoComplete="off"/>
-   <button className="button primary" type="submit">Search</button>
-  </form>
+  <SearchBox variant="page" value={value} onQueryChange={setValue} onSearch={clean=>setParams(clean?{q:clean}:{})}/>
   <div className="live-search-status" role="status" aria-live="polite">
    <span>{searching?'Updating results…':liveQuery?`${results.length} matching lesson${results.length===1?'':'s'}`:'Featured lessons — type to filter instantly'}</span>
    {liveQuery&&<button type="button" onClick={()=>{setValue('');setParams({});}}>Clear search</button>}
