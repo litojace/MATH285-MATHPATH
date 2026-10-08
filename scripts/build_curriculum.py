@@ -7,6 +7,7 @@ import json
 import subprocess
 from pathlib import Path
 import sympy as S
+from linear_professor import expand_linear
 
 x, y, t, z, s, a, b, c = S.symbols('x y t z s a b c', real=True)
 n = S.symbols('n', integer=True, nonnegative=True)
@@ -1095,7 +1096,8 @@ def build():
             **({'visualization':legacy[lesson_id]['visualization']} if lesson_id in legacy and legacy[lesson_id].get('visualization') else {})})
     assert len(result)==51 and sum(l['courseId']=='linear-algebra' for l in result)==27
     assert sum(l['courseId']=='differential-equations' for l in result)==24
-    assert sum(len(l['exercises']) for l in result)==513
+    expand_linear(result,audit,P,st,latex)
+    assert sum(len(l['exercises']) for l in result)==567
     ids={l['id'] for l in result}
     assert all(p in ids for l in result for p in l['prerequisites'])
     Path('src/content/course-lessons.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')

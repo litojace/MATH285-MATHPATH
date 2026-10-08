@@ -1,6 +1,6 @@
 {
   "tool": "SymPy 1.14.0",
-  "newProblemsChecked": 565,
+  "newProblemsChecked": 673,
   "checks": [
     {
       "id": "linear-algebra-1-1-1",
@@ -5920,6 +5920,1842 @@
         {
           "left": "C_1**2 + C_2**2",
           "right": "C_1**2 + C_2**2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [q/(q - 2) + 4 - 2/(q - 2)]])",
+          "right": "Matrix([[2], [5]])"
+        },
+        {
+          "left": "q - 2",
+          "right": "q - 2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [q/(q - 2) + 8 - 2/(q - 2)]])",
+          "right": "Matrix([[4], [9]])"
+        },
+        {
+          "left": "q - 2",
+          "right": "q - 2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [6]])",
+          "right": "Matrix([[3], [6]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-1-1-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[5], [10]])",
+          "right": "Matrix([[5], [10]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "systems-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [7], [9]])",
+          "right": "Matrix([[2], [7], [9]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "Matrix([[1, 2, 0, -1, 2], [0, 0, 1, 3, 3], [0, 0, 0, 0, 0]])",
+          "right": "Matrix([[1, 2, 0, -1, 2], [0, 0, 1, 3, 3], [0, 0, 0, 0, 0]])"
+        }
+      ]
+    },
+    {
+      "id": "systems-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [13], [17]])",
+          "right": "Matrix([[4], [13], [17]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "Matrix([[1, 2, 0, -1, 4], [0, 0, 1, 3, 5], [0, 0, 0, 0, 0]])",
+          "right": "Matrix([[1, 2, 0, -1, 4], [0, 0, 1, 3, 5], [0, 0, 0, 0, 0]])"
+        }
+      ]
+    },
+    {
+      "id": "systems-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "systems-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[4, -2, 5], [2, -2, 4], [-1, -1, 1]])",
+          "right": "Matrix([[4, -2, 5], [2, -2, 4], [-1, -1, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[6, -4, 17], [2, -2, 8], [-1, -1, 3]])",
+          "right": "Matrix([[6, -4, 17], [2, -2, 8], [-1, -1, 3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[5, 2, -1], [-3, -2, -1], [10, 6, 2]])",
+          "right": "Matrix([[5, 2, -1], [-3, -2, -1], [10, 6, 2]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-1-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[7, 2, -1], [-5, -2, -1], [26, 10, 4]])",
+          "right": "Matrix([[7, 2, -1], [-5, -2, -1], [26, 10, 4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[2, 0], [0, 0]])",
+          "right": "Matrix([[2, 0], [0, 0]])"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "-3",
+          "right": "-3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[4, 0], [0, 0]])",
+          "right": "Matrix([[4, 0], [0, 0]])"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "-3",
+          "right": "-3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 3], [3, 0]])",
+          "right": "Matrix([[1, 3], [3, 0]])"
+        },
+        {
+          "left": "Matrix([[2, 0], [0, 1]])",
+          "right": "Matrix([[2, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[2, 6], [3, 0]])",
+          "right": "Matrix([[2, 6], [3, 0]])"
+        },
+        {
+          "left": "-3",
+          "right": "-3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-2-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 5], [5, 0]])",
+          "right": "Matrix([[1, 5], [5, 0]])"
+        },
+        {
+          "left": "Matrix([[2, 0], [0, 1]])",
+          "right": "Matrix([[2, 0], [0, 1]])"
+        },
+        {
+          "left": "Matrix([[2, 10], [5, 0]])",
+          "right": "Matrix([[2, 10], [5, 0]])"
+        },
+        {
+          "left": "-5",
+          "right": "-5"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0, 0, -1, 1], [0, 1, 0, 3/4, 1/4, -3/4], [0, 0, 1, -1/4, 1/4, 1/4]])",
+          "right": "Matrix([[1, 0, 0, 0, -1, 1], [0, 1, 0, 3/4, 1/4, -3/4], [0, 0, 1, -1/4, 1/4, 1/4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0, 1/2, -3/2, 1/2], [0, 1, 0, 3/4, 1/4, -3/4], [0, 0, 1, -1/4, 1/4, 1/4]])",
+          "right": "Matrix([[1, 0, 0, 1/2, -3/2, 1/2], [0, 1, 0, 3/4, 1/4, -3/4], [0, 0, 1, -1/4, 1/4, 1/4]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[3], [-1], [2]])",
+          "right": "Matrix([[3], [-1], [2]])"
+        },
+        {
+          "left": "Matrix([[7], [5], [10]])",
+          "right": "Matrix([[7], [5], [10]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-3-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[5], [-1], [2]])",
+          "right": "Matrix([[5], [-1], [2]])"
+        },
+        {
+          "left": "Matrix([[13], [5], [16]])",
+          "right": "Matrix([[13], [5], [16]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 1, 1], [1, 2, 0], [1, 2, 3]])",
+          "right": "Matrix([[0, 1, 1], [1, 2, 0], [1, 2, 3]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 1, 1], [1, 4, 0], [1, 2, 3]])",
+          "right": "Matrix([[0, 1, 1], [1, 4, 0], [1, 2, 3]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 3, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 3, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "6",
+          "right": "6"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-4-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[1, 5, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 5, 0], [0, 1, 0], [0, 0, 1]])"
+        },
+        {
+          "left": "10",
+          "right": "10"
+        },
+        {
+          "left": "5",
+          "right": "5"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[13, 1, 16]])",
+          "right": "Matrix([[13, 1, 16]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[13, 1, 16]])",
+          "right": "Matrix([[13, 1, 16]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[25, 5, 19]])",
+          "right": "Matrix([[25, 5, 19]])"
+        },
+        {
+          "left": "Matrix([[44, 74, 166]])",
+          "right": "Matrix([[44, 74, 166]])"
+        },
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-2-6-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[25, 5, 19]])",
+          "right": "Matrix([[25, 5, 19]])"
+        },
+        {
+          "left": "Matrix([[44, 74, 254]])",
+          "right": "Matrix([[44, 74, 254]])"
+        },
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "22",
+          "right": "22"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-extended-1",
+      "assertions": [
+        {
+          "left": "46",
+          "right": "46"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "-18",
+          "right": "-18"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-1-extended-2",
+      "assertions": [
+        {
+          "left": "-30",
+          "right": "-30"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "-6",
+          "right": "-6"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-extended-1",
+      "assertions": [
+        {
+          "left": "-6",
+          "right": "-6"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "-22",
+          "right": "-22"
+        },
+        {
+          "left": "11",
+          "right": "11"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-2-extended-2",
+      "assertions": [
+        {
+          "left": "-22",
+          "right": "-22"
+        },
+        {
+          "left": "11",
+          "right": "11"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "-3*sqrt(33)/2 - 3*(3/2 - sqrt(33)/6)**2 + 19/2",
+          "right": "0"
+        },
+        {
+          "left": "-3*(sqrt(33)/6 + 3/2)**2 + 3*sqrt(33)/2 + 19/2",
+          "right": "0"
+        },
+        {
+          "left": "-3*q**2 + 9*q - 4",
+          "right": "-3*q**2 + 9*q - 4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-extended-1",
+      "assertions": [
+        {
+          "left": "-17*sqrt(241)/6 - 3*(17/6 - sqrt(241)/6)**2 + 265/6",
+          "right": "0"
+        },
+        {
+          "left": "-3*(sqrt(241)/6 + 17/6)**2 + 17*sqrt(241)/6 + 265/6",
+          "right": "0"
+        },
+        {
+          "left": "-3*q**2 + 17*q - 4",
+          "right": "-3*q**2 + 17*q - 4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "-16",
+          "right": "-16"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-3-extended-2",
+      "assertions": [
+        {
+          "left": "-80/3",
+          "right": "-80/3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, 4]])",
+          "right": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, 4]])"
+        },
+        {
+          "left": "Matrix([[0, -1, 1], [3/4, 1/4, -3/4], [-1/4, 1/4, 1/4]])",
+          "right": "Matrix([[0, -1, 1], [3/4, 1/4, -3/4], [-1/4, 1/4, 1/4]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, 4]])",
+          "right": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, 4]])"
+        },
+        {
+          "left": "Matrix([[1/2, -3/2, 1/2], [3/4, 1/4, -3/4], [-1/4, 1/4, 1/4]])",
+          "right": "Matrix([[1/2, -3/2, 1/2], [3/4, 1/4, -3/4], [-1/4, 1/4, 1/4]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [1], [-1]])",
+          "right": "Matrix([[3], [1], [-1]])"
+        },
+        {
+          "left": "Matrix([[2], [-2], [0]])",
+          "right": "Matrix([[2], [-2], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-3-4-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[5], [1], [-1]])",
+          "right": "Matrix([[5], [1], [-1]])"
+        },
+        {
+          "left": "Matrix([[2], [-2], [0]])",
+          "right": "Matrix([[2], [-2], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [1], [3], [1]])",
+          "right": "Matrix([[4], [1], [3], [1]])"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[6], [1], [5], [5]])",
+          "right": "Matrix([[6], [1], [5], [5]])"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-1-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-extended-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "-2",
+          "right": "-2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-2-extended-2",
+      "assertions": [
+        {
+          "left": "-2",
+          "right": "-2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "b*x - 2*b + c*x**2 - 4*c",
+          "right": "b*(x - 2) + c*(x**2 - 4)"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-extended-1",
+      "assertions": [
+        {
+          "left": "b*x - 4*b + c*x**2 - 16*c",
+          "right": "b*(x - 4) + c*(x**2 - 16)"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 3], [0, 0]])",
+          "right": "Matrix([[1, 3], [0, 0]])"
+        },
+        {
+          "left": "Matrix([[4, 12], [0, 0]])",
+          "right": "Matrix([[4, 12], [0, 0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-3-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 5], [0, 0]])",
+          "right": "Matrix([[1, 5], [0, 0]])"
+        },
+        {
+          "left": "Matrix([[4, 20], [0, 0]])",
+          "right": "Matrix([[4, 20], [0, 0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "vectors-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "vectors-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "vectors-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [1], [4]])",
+          "right": "Matrix([[1], [1], [4]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "vectors-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [1], [6]])",
+          "right": "Matrix([[1], [1], [6]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [0]])",
+          "right": "Matrix([[0], [0], [0]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[a, b], [b, -2*a]])",
+          "right": "Matrix([[a, b], [b, -2*a]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, -2]])",
+          "right": "Matrix([[1, 0], [0, -2]])"
+        },
+        {
+          "left": "Matrix([[0, 1], [1, 0]])",
+          "right": "Matrix([[0, 1], [1, 0]])"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[a, b], [b, -4*a]])",
+          "right": "Matrix([[a, b], [b, -4*a]])"
+        },
+        {
+          "left": "Matrix([[1, 0], [0, -4]])",
+          "right": "Matrix([[1, 0], [0, -4]])"
+        },
+        {
+          "left": "Matrix([[0, 1], [1, 0]])",
+          "right": "Matrix([[0, 1], [1, 0]])"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [1], [2]])",
+          "right": "Matrix([[1], [1], [2]])"
+        },
+        {
+          "left": "Matrix([[3], [3], [6]])",
+          "right": "Matrix([[3], [3], [6]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-5-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[1], [1], [2]])",
+          "right": "Matrix([[1], [1], [2]])"
+        },
+        {
+          "left": "Matrix([[5], [5], [10]])",
+          "right": "Matrix([[5], [5], [10]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 0], [0, 0], [0, 0]])",
+          "right": "Matrix([[0, 0], [0, 0], [0, 0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0, 0], [0, 0], [0, 0]])",
+          "right": "Matrix([[0, 0], [0, 0], [0, 0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [1], [7]])",
+          "right": "Matrix([[3], [1], [7]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-6-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[5], [1], [11]])",
+          "right": "Matrix([[5], [1], [11]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 1, 0], [0, 1, 1], [0, 0, 1]])",
+          "right": "Matrix([[1, 1, 0], [0, 1, 1], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[1], [1], [2]])",
+          "right": "Matrix([[1], [1], [2]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0, 1, 1, -1], [0, 1, 0, 0, 1, 1], [0, 0, 1, 0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0, 1, 1, -1], [0, 1, 0, 0, 1, 1], [0, 0, 1, 0, 0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[1, 1, 0], [0, 1, 1], [0, 0, 1]])",
+          "right": "Matrix([[1, 1, 0], [0, 1, 1], [0, 0, 1]])"
+        },
+        {
+          "left": "Matrix([[3], [1], [2]])",
+          "right": "Matrix([[3], [1], [2]])"
+        },
+        {
+          "left": "Matrix([[1, 0, 0, 1, 1, -1], [0, 1, 0, 0, 1, 1], [0, 0, 1, 0, 0, 1]])",
+          "right": "Matrix([[1, 0, 0, 1, 1, -1], [0, 1, 0, 0, 1, 1], [0, 0, 1, 0, 0, 1]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [1], [2]])",
+          "right": "Matrix([[2], [1], [2]])"
+        },
+        {
+          "left": "2*x**2 + x + 2",
+          "right": "2*x**2 + x + 2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-7-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [1], [2]])",
+          "right": "Matrix([[4], [1], [2]])"
+        },
+        {
+          "left": "2*x**2 + x + 4",
+          "right": "2*x**2 + x + 4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "exp(4*x)",
+          "right": "exp(4*x)"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-extended-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "exp(8*x)",
+          "right": "exp(8*x)"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "27",
+          "right": "27"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-extended-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "125",
+          "right": "125"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "-2",
+          "right": "-2"
+        },
+        {
+          "left": "23",
+          "right": "23"
+        },
+        {
+          "left": "2/45",
+          "right": "2/45"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-extended-1",
+      "assertions": [
+        {
+          "left": "-2",
+          "right": "-2"
+        },
+        {
+          "left": "47",
+          "right": "47"
+        },
+        {
+          "left": "2/231",
+          "right": "2/231"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "-28",
+          "right": "-28"
+        },
+        {
+          "left": "14",
+          "right": "14"
+        },
+        {
+          "left": "56",
+          "right": "56"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-1-extended-2",
+      "assertions": [
+        {
+          "left": "-60",
+          "right": "-60"
+        },
+        {
+          "left": "30",
+          "right": "30"
+        },
+        {
+          "left": "120",
+          "right": "120"
+        }
+      ]
+    },
+    {
+      "id": "projection-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "12",
+          "right": "12"
+        },
+        {
+          "left": "4",
+          "right": "4"
+        }
+      ]
+    },
+    {
+      "id": "projection-extended-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "12",
+          "right": "12"
+        },
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "projection-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "10/3",
+          "right": "10/3"
+        },
+        {
+          "left": "8/45",
+          "right": "8/45"
+        }
+      ]
+    },
+    {
+      "id": "projection-extended-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "16/3",
+          "right": "16/3"
+        },
+        {
+          "left": "8/45",
+          "right": "8/45"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-extended-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-5-3-extended-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "2*a*alpha + alpha*(b + 2*c*x) + 3*beta",
+          "right": "alpha*(2*a + b + 2*c*x) + 3*beta"
+        },
+        {
+          "left": "2*a + b + 2*c*x",
+          "right": "2*a + b + 2*c*x"
+        },
+        {
+          "left": "2*x",
+          "right": "2*x"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-extended-1",
+      "assertions": [
+        {
+          "left": "4*a*alpha + alpha*(b + 2*c*x) + 5*beta",
+          "right": "alpha*(4*a + b + 2*c*x) + 5*beta"
+        },
+        {
+          "left": "4*a + b + 2*c*x",
+          "right": "4*a + b + 2*c*x"
+        },
+        {
+          "left": "2*x",
+          "right": "2*x"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-1-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2*x + 2",
+          "right": "2*x + 2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        },
+        {
+          "left": "2*x + 4",
+          "right": "2*x + 4"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        },
+        {
+          "left": "Matrix([[3], [2]])",
+          "right": "Matrix([[3], [2]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-2-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        },
+        {
+          "left": "Matrix([[5], [2]])",
+          "right": "Matrix([[5], [2]])"
+        },
+        {
+          "left": "2",
+          "right": "2"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [-4], [3]])",
+          "right": "Matrix([[0], [-4], [3]])"
+        },
+        {
+          "left": "Matrix([[0], [-4], [3]])",
+          "right": "Matrix([[0], [-4], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [-4], [3]])",
+          "right": "Matrix([[0], [-4], [3]])"
+        },
+        {
+          "left": "Matrix([[0], [-4], [3]])",
+          "right": "Matrix([[0], [-4], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "4*x**3 + 24*x**2 + 4*x - 7",
+          "right": "4*x**3 + 24*x**2 + 16*x - 6*(2*x + 1) - 1"
+        },
+        {
+          "left": "16",
+          "right": "16"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-3-extended-2",
+      "assertions": [
+        {
+          "left": "4*x**3 + 40*x**2 + 36*x - 13",
+          "right": "4*x**3 + 40*x**2 + 48*x - 2*(6*x + 5) - 3"
+        },
+        {
+          "left": "16",
+          "right": "16"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[3, 4], [3, 6]])",
+          "right": "Matrix([[3, 4], [3, 6]])"
+        },
+        {
+          "left": "5",
+          "right": "5"
+        },
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[5, 6], [5, 10]])",
+          "right": "Matrix([[5, 6], [5, 10]])"
+        },
+        {
+          "left": "9",
+          "right": "9"
+        },
+        {
+          "left": "20",
+          "right": "20"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[-2], [-9]])",
+          "right": "Matrix([[-2], [-9]])"
+        },
+        {
+          "left": "Matrix([[-11], [-20]])",
+          "right": "Matrix([[-11], [-20]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-6-4-extended-2",
+      "assertions": [
+        {
+          "left": "Matrix([[-4], [-25]])",
+          "right": "Matrix([[-4], [-25]])"
+        },
+        {
+          "left": "Matrix([[-29], [-54]])",
+          "right": "Matrix([[-29], [-54]])"
+        }
+      ]
+    },
+    {
+      "id": "eigenvalues-professor-aligned-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [0], [0]])",
+          "right": "Matrix([[2], [0], [0]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [3]])",
+          "right": "Matrix([[0], [0], [3]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "-(lambda - 3)*(lambda - 2)**2",
+          "right": "(2 - lambda)**2*(3 - lambda)"
+        }
+      ]
+    },
+    {
+      "id": "eigenvalues-extended-1",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [0], [0]])",
+          "right": "Matrix([[4], [0], [0]])"
+        },
+        {
+          "left": "Matrix([[0], [0], [5]])",
+          "right": "Matrix([[0], [0], [5]])"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        },
+        {
+          "left": "-(lambda - 5)*(lambda - 4)**2",
+          "right": "(4 - lambda)**2*(5 - lambda)"
+        }
+      ]
+    },
+    {
+      "id": "eigenvalues-professor-aligned-example-2",
+      "assertions": [
+        {
+          "left": "lambda**2 + 9",
+          "right": "lambda**2 + 9"
+        },
+        {
+          "left": "Matrix([[3*I], [3]])",
+          "right": "Matrix([[3*I], [3]])"
+        },
+        {
+          "left": "Matrix([[-3*I], [3]])",
+          "right": "Matrix([[-3*I], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "eigenvalues-extended-2",
+      "assertions": [
+        {
+          "left": "lambda**2 + 25",
+          "right": "lambda**2 + 25"
+        },
+        {
+          "left": "Matrix([[5*I], [5]])",
+          "right": "Matrix([[5*I], [5]])"
+        },
+        {
+          "left": "Matrix([[-5*I], [5]])",
+          "right": "Matrix([[-5*I], [5]])"
         }
       ]
     }

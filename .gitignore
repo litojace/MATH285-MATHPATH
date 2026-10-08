@@ -7,3 +7,4 @@ playwright-report/
 test-results/
 *.tsbuildinfo
 public/course-notes/*.pdf
+__pycache__/

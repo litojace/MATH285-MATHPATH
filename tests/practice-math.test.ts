@@ -8,7 +8,7 @@ const derivative=(f:(x:number)=>number,x:number)=>(f(x+1e-5)-f(x-1e-5))/2e-5;
 describe('supplementary practice mathematics',()=>{
  it('renders every formula, hint and worked step without LaTeX errors',()=>{
   for(const lesson of lessons){
-   const steps=[...lesson.definitions,...lesson.formulas,...lesson.examples.flatMap(e=>e.steps),...lesson.exercises.flatMap(e=>[{math:e.math},...e.hints,...e.solutionSteps])];
+   const steps=[...lesson.definitions,...lesson.formulas,...(lesson.methodGuide??[]),...lesson.examples.flatMap(e=>e.steps),...lesson.exercises.flatMap(e=>[{math:e.math},...e.hints,...e.solutionSteps])];
    for(const step of steps)if(step.math)expect(()=>katex.renderToString(step.math!,{throwOnError:true})).not.toThrow();
   }
  });

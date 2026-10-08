@@ -9,6 +9,17 @@ describe('content library',()=>{
   for(const lesson of lessons){const questions=lesson.exercises.map(e=>`${e.prompt}\n${e.math}`);expect(new Set(questions).size,lesson.id).toBe(questions.length);}
  });
  it('keeps solutions hidden by content structure rather than embedding them in prompts',()=>lessons.forEach(l=>l.exercises.forEach(e=>expect(e.solutionSteps.length).toBeGreaterThanOrEqual(2))));
+ it('gives every linear lesson a detailed guide, source pages, and extended problem families',()=>{
+  for(const lesson of lessons.filter(l=>l.courseId==='linear-algebra')){
+   expect(lesson.methodGuide,lesson.id).toHaveLength(3);
+   expect(lesson.methodGuide!.every(part=>part.text.split(/\s+/).length>=50),lesson.id).toBe(true);
+   expect(lesson.sourceReferences[0].fileName).toBe('LINEAR PROFESSOR V.pdf');
+   expect(lesson.sourceReferences[0].pageNumbers.every(n=>n>=1&&n<=90)).toBe(true);
+   expect(lesson.examples.length).toBeGreaterThanOrEqual(5);
+   expect(lesson.exercises.filter(e=>e.id.includes('-extended-'))).toHaveLength(2);
+   expect(lesson.exercises.filter(e=>e.id.includes('-extended-')).every(e=>e.solutionSteps.length>=5)).toBe(true);
+  }
+ });
  it('publishes every requested section once, preserving skipped chapter numbers',()=>{
   expect(lessons.filter(l=>l.courseId==='linear-algebra')).toHaveLength(27);
   expect(lessons.filter(l=>l.courseId==='differential-equations')).toHaveLength(24);

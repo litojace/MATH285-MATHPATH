@@ -22,6 +22,13 @@ for(const width of [320,1440]){
     await page.goto(`/lessons/${lesson.id}`);
     await expect(page.getByRole('heading',{level:1,name:lesson.title,exact:true})).toBeVisible();
     await expect(page.getByRole('button',{name:'Tutor mode',exact:true})).toHaveCount(0);
+    if(lesson.methodGuide){
+     const guide=page.getByRole('region',{name:'Detailed method guide'});
+     await expect(guide.locator('.method-guide-part')).toHaveCount(3);
+     await expect(page.locator('.source-references')).toContainText('LINEAR PROFESSOR V.pdf');
+     await page.locator('details.example').evaluateAll(examples=>examples.forEach(example=>example.setAttribute('open','')));
+     await expect(page.locator('.katex-error')).toHaveCount(0);
+    }
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     await page.getByRole('button',{name:'Practice & solutions',exact:true}).click();
     await expect(page.locator('article.exercise')).toHaveCount(lesson.exercises.length);

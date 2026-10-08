@@ -20,7 +20,7 @@ describe('lesson practice',()=>{
   expect(screen.queryByText(/tutor mode/i)).not.toBeInTheDocument();
   fireEvent.click(within(sections).getByRole('button',{name:'Practice & solutions'}));
   const reveal=screen.getAllByRole('button',{name:'Show Step-by-Step Solution'});
-  expect(reveal).toHaveLength(10);
+  expect(reveal).toHaveLength(12);
   expect(screen.queryByText('Work through the solution')).not.toBeInTheDocument();
   const problem=screen.getByText('Solve for y by subtracting the equations.').closest('article')!;
   fireEvent.change(within(problem).getByLabelText('Your answer'),{target:{value:'99'}});
