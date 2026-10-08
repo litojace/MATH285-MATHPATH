@@ -229,10 +229,6 @@
       "A zero row is not a contradiction; a row with zero coefficients and a nonzero constant is."
     ],
     "summary": "Row operations preserve solutions because they are reversible. Pivot columns identify solved variables; missing pivots may produce free variables.",
-    "teachingPrompts": [
-      "Explain the reverse operation for each allowed row operation.",
-      "Show why a zero row and a contradictory row have different meanings."
-    ],
     "visualization": "transform"
   },
   {
@@ -449,10 +445,6 @@
       "Two vectors need not be perpendicular to be independent."
     ],
     "summary": "Span asks what can be built; independence asks whether any supplied direction is redundant. A basis is an independent spanning set.",
-    "teachingPrompts": [
-      "Explain span without using the word span.",
-      "Give a nonperpendicular pair of independent vectors."
-    ],
     "visualization": "vectors"
   },
   {
@@ -680,10 +672,6 @@
       "Projection is a vector; the coefficient alone is a scalar."
     ],
     "summary": "Projection chooses the closest point on a line. Subtracting the shadow gives a perpendicular residual.",
-    "teachingPrompts": [
-      "Derive the coefficient by requiring perpendicularity.",
-      "Explain why an unnormalized direction still works."
-    ],
     "visualization": "projection"
   },
   {
@@ -906,10 +894,6 @@
       "Not every real matrix has a real eigenvector."
     ],
     "summary": "Eigenvectors reveal invariant directions of a transformation. Always check Av = λv after solving.",
-    "teachingPrompts": [
-      "Explain why the zero vector must be excluded.",
-      "Show what a negative eigenvalue does to a direction."
-    ],
     "visualization": "transform"
   },
   {
@@ -1129,10 +1113,6 @@
       "Keep the integration constant and specify intervals when denominators can vanish."
     ],
     "summary": "Separate factors, integrate, recover any equilibrium solutions, apply the initial condition, and check the result in the original equation.",
-    "teachingPrompts": [
-      "Explain why dividing by y can lose a solution.",
-      "Interpret a negative growth rate physically."
-    ],
     "visualization": "growth"
   },
   {
@@ -1351,10 +1331,6 @@
       "Do not forget to divide by μ after integrating."
     ],
     "summary": "An integrating factor is a product-rule device, not a formula to memorize without meaning. Verify by differentiating the result.",
-    "teachingPrompts": [
-      "Derive μ′ = Pμ from the product rule.",
-      "Explain why the integration constant cannot be dropped."
-    ],
     "visualization": "slope"
   },
   {
@@ -1585,10 +1561,6 @@
       "A second-order initial-value problem needs two conditions."
     ],
     "summary": "The characteristic roots determine the form of a homogeneous constant-coefficient solution. Substitute to check and use both initial conditions.",
-    "teachingPrompts": [
-      "Explain why y=eʳˣ is a useful trial.",
-      "Describe the difference between a repeated root and two distinct roots."
-    ],
     "visualization": "oscillator"
   },
   {
@@ -1805,10 +1777,6 @@
       "Euler output is an approximation, not an exact solution; label it accordingly."
     ],
     "summary": "Euler follows local slopes. Compare with an exact solution when available and inspect both error and stability.",
-    "teachingPrompts": [
-      "Explain the tangent-line approximation using a sketch.",
-      "Give a case where a large step contradicts the true decay."
-    ],
     "visualization": "euler"
   }
 ]
