@@ -1,0 +1,1814 @@
+[
+  {
+    "id": "systems",
+    "courseId": "linear-algebra",
+    "chapter": "Foundations",
+    "section": "Supplement",
+    "title": "Systems & row reduction",
+    "description": "Turn several equations into one clear path to a solution.",
+    "difficulty": "beginner",
+    "keywords": [
+      "Gaussian elimination",
+      "Gauss Jordan",
+      "RREF",
+      "augmented matrix",
+      "linear equations",
+      "inconsistent",
+      "row operations"
+    ],
+    "prerequisites": [],
+    "learningObjectives": [
+      "Represent a system as an augmented matrix.",
+      "Explain why row operations preserve solutions.",
+      "Distinguish one, no, and infinitely many solutions."
+    ],
+    "estimatedMinutes": 20,
+    "sourceReferences": [],
+    "provenance": "supplementary-original",
+    "reviewStatus": "verified",
+    "bigIdea": "A system asks for values that make every equation true at once. Think of two lines: their shared point is a solution. Elimination replaces equations with easier equivalent equations until the shared values become visible.",
+    "definitions": [
+      {
+        "text": "A linear equation uses unknowns only to the first power. The coefficients a and b and the constant c are fixed numbers.",
+        "math": "ax+by=c"
+      },
+      {
+        "text": "An augmented matrix keeps the coefficients on the left and the constants on the right.",
+        "math": "\\left[\\begin{array}{cc|c}a&b&c\\\\d&e&f\\end{array}\\right]"
+      },
+      {
+        "text": "A pivot is the first nonzero entry in a nonzero row. In reduced row-echelon form each pivot is 1 and is the only nonzero entry in its column."
+      }
+    ],
+    "reasoning": "Swapping equations does not change which values satisfy them. Multiplying an equation by a nonzero number is reversible. Adding a multiple of another equation is reversible by subtracting that multiple. Reversibility is why these operations preserve the entire solution set.",
+    "formulas": [
+      {
+        "text": "Allowed row operations; k must be nonzero in the scaling operation.",
+        "math": "R_i\\leftrightarrow R_j,\\qquad R_i\\leftarrow kR_i,\\qquad R_i\\leftarrow R_i+kR_j"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Beginner · eliminate one variable",
+        "difficulty": 1,
+        "steps": [
+          {
+            "text": "Write the two equations together.",
+            "math": "\\begin{cases}x+y=5\\\\x-y=1\\end{cases}"
+          },
+          {
+            "text": "Add the equations; y cancels because y + (−y) = 0.",
+            "math": "2x=6\\quad\\Longrightarrow\\quad x=3"
+          },
+          {
+            "text": "Substitute x = 3 into the first equation and subtract 3.",
+            "math": "3+y=5\\quad\\Longrightarrow\\quad y=2"
+          },
+          {
+            "text": "Check both original equations.",
+            "math": "3+2=5,\\qquad3-2=1"
+          }
+        ]
+      },
+      {
+        "title": "Intermediate · row reduction",
+        "difficulty": 2,
+        "steps": [
+          {
+            "text": "Encode the coefficients and constants.",
+            "math": "\\left[\\begin{array}{cc|c}1&2&7\\\\2&-1&4\\end{array}\\right]"
+          },
+          {
+            "text": "Subtract twice row 1 from row 2.",
+            "math": "R_2\\leftarrow R_2-2R_1:\\quad\\left[\\begin{array}{cc|c}1&2&7\\\\0&-5&-10\\end{array}\\right]"
+          },
+          {
+            "text": "Divide row 2 by −5, then subtract twice row 2 from row 1.",
+            "math": "\\left[\\begin{array}{cc|c}1&0&3\\\\0&1&2\\end{array}\\right]"
+          },
+          {
+            "text": "Read the pivots as x = 3 and y = 2; check 3 + 4 = 7 and 6 − 2 = 4."
+          }
+        ]
+      },
+      {
+        "title": "Challenge · identify a free variable",
+        "difficulty": 3,
+        "steps": [
+          {
+            "text": "The second equation is twice the first.",
+            "math": "x+2y=4,\\qquad2x+4y=8"
+          },
+          {
+            "text": "Eliminating the first column produces a zero row.",
+            "math": "\\left[\\begin{array}{cc|c}1&2&4\\\\0&0&0\\end{array}\\right]"
+          },
+          {
+            "text": "There is no pivot in the y column. Choose any real t for y, then solve for x.",
+            "math": "y=t,\\qquad x=4-2t,\\quad t\\in\\mathbb{R}"
+          },
+          {
+            "text": "Substitution gives 4 in the first equation and 8 in the second for every t."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "systems-1",
+        "difficulty": 1,
+        "prompt": "Find x in this system.",
+        "math": "x+y=9,\\quad x-y=3",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Add the two equations."
+          },
+          {
+            "text": "The y terms cancel.",
+            "math": "2x=12"
+          },
+          {
+            "text": "Divide both sides by 2."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Add the left and right sides.",
+            "math": "2x=12"
+          },
+          {
+            "text": "Divide by 2.",
+            "math": "x=6"
+          },
+          {
+            "text": "The other variable is y = 3; both equations check."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": 6,
+        "lessonId": "systems"
+      },
+      {
+        "id": "systems-2",
+        "difficulty": 2,
+        "prompt": "Enter the solution as a 2×1 column matrix. Use rows separated by semicolons.",
+        "math": "x+2y=8,\\quad3x-y=3",
+        "answerType": "matrix",
+        "hints": [
+          {
+            "text": "Eliminate x from the second equation."
+          },
+          {
+            "text": "Subtract three times the first equation.",
+            "math": "-7y=-21"
+          },
+          {
+            "text": "Solve for y and substitute into the first equation."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Subtract 3 times equation 1 from equation 2.",
+            "math": "-7y=-21\\Rightarrow y=3"
+          },
+          {
+            "text": "Substitute and solve.",
+            "math": "x+6=8\\Rightarrow x=2"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": [
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lessonId": "systems"
+      },
+      {
+        "id": "systems-3",
+        "difficulty": 3,
+        "prompt": "How many solutions does this system have?",
+        "math": "x+y=2,\\quad2x+2y=5",
+        "answerType": "multiple-choice",
+        "hints": [
+          {
+            "text": "Compare twice the first equation with the second."
+          },
+          {
+            "text": "Eliminate both variable terms."
+          },
+          {
+            "text": "Can 0 equal a nonzero number?"
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Subtract twice the first equation.",
+            "math": "0=1"
+          },
+          {
+            "text": "A contradiction means no pair satisfies both equations."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": "None",
+        "choices": [
+          "One",
+          "None",
+          "Infinitely many"
+        ],
+        "lessonId": "systems"
+      }
+    ],
+    "mistakes": [
+      "Never multiply a row by zero: that destroys information.",
+      "A zero row is not a contradiction; a row with zero coefficients and a nonzero constant is."
+    ],
+    "summary": "Row operations preserve solutions because they are reversible. Pivot columns identify solved variables; missing pivots may produce free variables.",
+    "teachingPrompts": [
+      "Explain the reverse operation for each allowed row operation.",
+      "Show why a zero row and a contradictory row have different meanings."
+    ],
+    "visualization": "transform"
+  },
+  {
+    "id": "vectors",
+    "courseId": "linear-algebra",
+    "chapter": "Foundations",
+    "section": "Supplement",
+    "title": "Vectors, span & independence",
+    "description": "See vectors as directions, then discover what they can build.",
+    "difficulty": "beginner",
+    "keywords": [
+      "vector addition",
+      "scalar multiplication",
+      "linear combination",
+      "span",
+      "basis",
+      "dimension",
+      "linear independence"
+    ],
+    "prerequisites": [],
+    "learningObjectives": [
+      "Add and scale vectors component by component.",
+      "Describe span geometrically.",
+      "Recognize independent directions in two dimensions."
+    ],
+    "estimatedMinutes": 20,
+    "sourceReferences": [],
+    "provenance": "supplementary-original",
+    "reviewStatus": "verified",
+    "bigIdea": "A vector records a direction and a size. Starting at the origin, its components tell you how far to move horizontally and vertically. Scaling stretches or reverses that move; addition joins two moves head to tail.",
+    "definitions": [
+      {
+        "text": "A vector in the plane is a column with two real components.",
+        "math": "v=\\begin{bmatrix}v_1\\\\v_2\\end{bmatrix}\\in\\mathbb{R}^2"
+      },
+      {
+        "text": "A linear combination adds scaled vectors.",
+        "math": "av+bw"
+      },
+      {
+        "text": "The span is the set of every linear combination. Independence means only all-zero coefficients produce the zero vector.",
+        "math": "av+bw=0\\Longrightarrow a=b=0"
+      }
+    ],
+    "reasoning": "If one nonzero vector is a multiple of another, both point along one line, so combinations stay on that line. Two nonparallel vectors give two separate directions; their coefficient matrix has a nonzero determinant and reaches every point of the plane.",
+    "formulas": [
+      {
+        "text": "Add and scale components.",
+        "math": "av+bw=\\begin{bmatrix}av_1+bw_1\\\\av_2+bw_2\\end{bmatrix}"
+      },
+      {
+        "text": "For two plane vectors, this nonzero determinant tests independence.",
+        "math": "v_1w_2-v_2w_1\\ne0"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Beginner · add two moves",
+        "difficulty": 1,
+        "steps": [
+          {
+            "text": "Start with two vectors.",
+            "math": "v=\\begin{bmatrix}1\\\\2\\end{bmatrix},\\quad w=\\begin{bmatrix}3\\\\-1\\end{bmatrix}"
+          },
+          {
+            "text": "Add matching components.",
+            "math": "v+w=\\begin{bmatrix}1+3\\\\2-1\\end{bmatrix}=\\begin{bmatrix}4\\\\1\\end{bmatrix}"
+          }
+        ]
+      },
+      {
+        "title": "Intermediate · build a target",
+        "difficulty": 2,
+        "steps": [
+          {
+            "text": "Use the horizontal and vertical unit vectors.",
+            "math": "e_1=\\begin{bmatrix}1\\\\0\\end{bmatrix},\\quad e_2=\\begin{bmatrix}0\\\\1\\end{bmatrix}"
+          },
+          {
+            "text": "Scale the horizontal move by 3 and the vertical move by −2.",
+            "math": "3e_1-2e_2=\\begin{bmatrix}3\\\\-2\\end{bmatrix}"
+          },
+          {
+            "text": "Every plane vector (a,b) can be built as ae₁ + be₂, so their span is the whole plane."
+          }
+        ]
+      },
+      {
+        "title": "Challenge · prove dependence",
+        "difficulty": 3,
+        "steps": [
+          {
+            "text": "Compare the two vectors.",
+            "math": "v=\\begin{bmatrix}2\\\\1\\end{bmatrix},\\quad w=\\begin{bmatrix}6\\\\3\\end{bmatrix}"
+          },
+          {
+            "text": "The second is three times the first.",
+            "math": "w=3v\\quad\\Longrightarrow\\quad3v-w=0"
+          },
+          {
+            "text": "Coefficients 3 and −1 are not both zero, so independence fails. The span is a line, not the whole plane."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "vectors-1",
+        "difficulty": 1,
+        "prompt": "Enter 2v + w as a column matrix.",
+        "math": "v=\\begin{bmatrix}1\\\\-2\\end{bmatrix},\\quad w=\\begin{bmatrix}3\\\\1\\end{bmatrix}",
+        "answerType": "matrix",
+        "hints": [
+          {
+            "text": "Scale both components of v by 2."
+          },
+          {
+            "text": "Add the corresponding components of w."
+          },
+          {
+            "text": "The second component is 2(−2) + 1."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Multiply v by 2.",
+            "math": "2v=\\begin{bmatrix}2\\\\-4\\end{bmatrix}"
+          },
+          {
+            "text": "Add w.",
+            "math": "2v+w=\\begin{bmatrix}5\\\\-3\\end{bmatrix}"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": [
+          [
+            5
+          ],
+          [
+            -3
+          ]
+        ],
+        "lessonId": "vectors"
+      },
+      {
+        "id": "vectors-2",
+        "difficulty": 2,
+        "prompt": "Compute the determinant of the matrix with these columns.",
+        "math": "v=\\begin{bmatrix}1\\\\2\\end{bmatrix},\\quad w=\\begin{bmatrix}3\\\\4\\end{bmatrix}",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Place v and w in separate columns."
+          },
+          {
+            "text": "Use ad − bc."
+          },
+          {
+            "text": "Subtract 3·2 from 1·4."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Use the two-by-two formula.",
+            "math": "\\det\\begin{bmatrix}1&3\\\\2&4\\end{bmatrix}=1\\cdot4-3\\cdot2"
+          },
+          {
+            "text": "Compute the difference.",
+            "math": "4-6=-2"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": -2,
+        "lessonId": "vectors"
+      },
+      {
+        "id": "vectors-3",
+        "difficulty": 3,
+        "prompt": "What is the span of these vectors?",
+        "math": "v=\\begin{bmatrix}1\\\\2\\end{bmatrix},\\quad w=\\begin{bmatrix}2\\\\4\\end{bmatrix}",
+        "answerType": "multiple-choice",
+        "hints": [
+          {
+            "text": "Check whether w is a multiple of v."
+          },
+          {
+            "text": "Every combination becomes a multiple of v."
+          },
+          {
+            "text": "A single nonzero direction traces a line."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Factor the combination.",
+            "math": "av+bw=(a+2b)v"
+          },
+          {
+            "text": "The coefficient can be any real number. The span is the line through v and the origin."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": "A line",
+        "choices": [
+          "A line",
+          "The whole plane",
+          "Only the origin"
+        ],
+        "lessonId": "vectors"
+      }
+    ],
+    "mistakes": [
+      "A negative scalar reverses direction; it does not change just one component.",
+      "Two vectors need not be perpendicular to be independent."
+    ],
+    "summary": "Span asks what can be built; independence asks whether any supplied direction is redundant. A basis is an independent spanning set.",
+    "teachingPrompts": [
+      "Explain span without using the word span.",
+      "Give a nonperpendicular pair of independent vectors."
+    ],
+    "visualization": "vectors"
+  },
+  {
+    "id": "projection",
+    "courseId": "linear-algebra",
+    "chapter": "Methods and applications",
+    "section": "Supplement",
+    "title": "Dot products & projection",
+    "description": "Find the part of a vector pointing in a chosen direction.",
+    "difficulty": "intermediate",
+    "keywords": [
+      "inner product",
+      "orthogonal",
+      "orthogonality",
+      "projection",
+      "perpendicular",
+      "Gram Schmidt"
+    ],
+    "prerequisites": [
+      "vectors"
+    ],
+    "learningObjectives": [
+      "Compute a dot product.",
+      "Project onto a nonzero vector.",
+      "Verify the residual is perpendicular."
+    ],
+    "estimatedMinutes": 20,
+    "sourceReferences": [],
+    "provenance": "supplementary-original",
+    "reviewStatus": "verified",
+    "bigIdea": "Projection is a vector’s shadow along a direction. It separates a vector into a part along that direction and a leftover perpendicular part. This is the geometric basis of best-fit approximations.",
+    "definitions": [
+      {
+        "text": "The dot product multiplies matching components and sums them.",
+        "math": "u\\cdot v=u_1v_1+u_2v_2"
+      },
+      {
+        "text": "Two nonzero vectors are orthogonal when their dot product is zero."
+      },
+      {
+        "text": "The length of u is the square root of its dot product with itself.",
+        "math": "\\|u\\|=\\sqrt{u\\cdot u}"
+      }
+    ],
+    "reasoning": "Write the shadow as cu for nonzero u. Requiring the leftover v−cu to be perpendicular to u gives (v−cu)·u = 0. Solving for c gives the projection formula. The squared distance to any other point tu on the line is the squared residual plus (c−t)²‖u‖², so the shadow is the closest point.",
+    "formulas": [
+      {
+        "text": "Projection onto the line generated by nonzero u.",
+        "math": "\\operatorname{proj}_u v=\\frac{v\\cdot u}{u\\cdot u}u"
+      },
+      {
+        "text": "The residual is orthogonal to u.",
+        "math": "r=v-\\operatorname{proj}_u v,\\qquad r\\cdot u=0"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Beginner · horizontal shadow",
+        "difficulty": 1,
+        "steps": [
+          {
+            "text": "Project v onto the horizontal unit vector.",
+            "math": "v=\\begin{bmatrix}3\\\\4\\end{bmatrix},\\quad u=\\begin{bmatrix}1\\\\0\\end{bmatrix}"
+          },
+          {
+            "text": "Compute the scalar coefficient.",
+            "math": "\\frac{v\\cdot u}{u\\cdot u}=\\frac{3}{1}=3"
+          },
+          {
+            "text": "Multiply u by 3.",
+            "math": "p=\\begin{bmatrix}3\\\\0\\end{bmatrix}"
+          }
+        ]
+      },
+      {
+        "title": "Intermediate · diagonal shadow",
+        "difficulty": 2,
+        "steps": [
+          {
+            "text": "Use an unnormalized direction.",
+            "math": "v=\\begin{bmatrix}3\\\\1\\end{bmatrix},\\quad u=\\begin{bmatrix}1\\\\1\\end{bmatrix}"
+          },
+          {
+            "text": "Compute numerator and denominator.",
+            "math": "v\\cdot u=4,\\quad u\\cdot u=2"
+          },
+          {
+            "text": "Scale u and compute the residual.",
+            "math": "p=2u=\\begin{bmatrix}2\\\\2\\end{bmatrix},\\quad r=\\begin{bmatrix}1\\\\-1\\end{bmatrix}"
+          },
+          {
+            "text": "Check perpendicularity.",
+            "math": "r\\cdot u=1-1=0"
+          }
+        ]
+      },
+      {
+        "title": "Challenge · first Gram–Schmidt step",
+        "difficulty": 3,
+        "steps": [
+          {
+            "text": "Remove from w its component along u.",
+            "math": "u=\\begin{bmatrix}1\\\\1\\end{bmatrix},\\quad w=\\begin{bmatrix}2\\\\0\\end{bmatrix}"
+          },
+          {
+            "text": "Compute the projection.",
+            "math": "\\operatorname{proj}_u w=\\frac{2}{2}u=\\begin{bmatrix}1\\\\1\\end{bmatrix}"
+          },
+          {
+            "text": "Subtract the projection to produce a perpendicular direction.",
+            "math": "w_\\perp=\\begin{bmatrix}1\\\\-1\\end{bmatrix}"
+          },
+          {
+            "text": "Normalize each vector by its length √2 to get an orthonormal pair."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "projection-1",
+        "difficulty": 1,
+        "prompt": "Compute the dot product.",
+        "math": "\\begin{bmatrix}2\\\\3\\end{bmatrix}\\cdot\\begin{bmatrix}4\\\\-1\\end{bmatrix}",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Multiply matching components."
+          },
+          {
+            "text": "Add the two products."
+          },
+          {
+            "text": "Compute 2·4 + 3·(−1)."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Multiply the components.",
+            "math": "2\\cdot4+3\\cdot(-1)"
+          },
+          {
+            "text": "Add.",
+            "math": "8-3=5"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": 5,
+        "lessonId": "projection"
+      },
+      {
+        "id": "projection-2",
+        "difficulty": 2,
+        "prompt": "Enter the projection as a column matrix.",
+        "math": "v=\\begin{bmatrix}4\\\\2\\end{bmatrix},\\quad u=\\begin{bmatrix}1\\\\1\\end{bmatrix}",
+        "answerType": "matrix",
+        "hints": [
+          {
+            "text": "Use the projection formula."
+          },
+          {
+            "text": "Compute v·u and u·u."
+          },
+          {
+            "text": "The coefficient is 6/2."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Find the coefficient.",
+            "math": "c=\\frac{4+2}{1+1}=3"
+          },
+          {
+            "text": "Multiply u.",
+            "math": "p=\\begin{bmatrix}3\\\\3\\end{bmatrix}"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": [
+          [
+            3
+          ],
+          [
+            3
+          ]
+        ],
+        "lessonId": "projection"
+      },
+      {
+        "id": "projection-3",
+        "difficulty": 3,
+        "prompt": "Can you project onto the zero vector using this formula?",
+        "math": "\\operatorname{proj}_u v=\\frac{v\\cdot u}{u\\cdot u}u",
+        "answerType": "multiple-choice",
+        "hints": [
+          {
+            "text": "Check the denominator."
+          },
+          {
+            "text": "Compute the zero vector’s squared length."
+          },
+          {
+            "text": "Division by zero is undefined."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "If u = 0, then u·u = 0."
+          },
+          {
+            "text": "The line direction is not defined; the formula requires a nonzero u."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": "No",
+        "choices": [
+          "Yes",
+          "No"
+        ],
+        "lessonId": "projection"
+      }
+    ],
+    "mistakes": [
+      "Divide by u·u, not the length of u.",
+      "Projection is a vector; the coefficient alone is a scalar."
+    ],
+    "summary": "Projection chooses the closest point on a line. Subtracting the shadow gives a perpendicular residual.",
+    "teachingPrompts": [
+      "Derive the coefficient by requiring perpendicularity.",
+      "Explain why an unnormalized direction still works."
+    ],
+    "visualization": "projection"
+  },
+  {
+    "id": "eigenvalues",
+    "courseId": "linear-algebra",
+    "chapter": "Methods and applications",
+    "section": "Supplement",
+    "title": "Transformations & eigenvectors",
+    "description": "Find directions a matrix stretches without turning.",
+    "difficulty": "intermediate",
+    "keywords": [
+      "eigen",
+      "eigenvalues",
+      "eigenvectors",
+      "linear transformation",
+      "matrix representation",
+      "kernel",
+      "range",
+      "change of basis",
+      "determinant"
+    ],
+    "prerequisites": [
+      "systems",
+      "vectors"
+    ],
+    "learningObjectives": [
+      "Apply a matrix to a vector.",
+      "Find eigenvalues of a 2×2 matrix.",
+      "Check an eigenvector by multiplication."
+    ],
+    "estimatedMinutes": 20,
+    "sourceReferences": [],
+    "provenance": "supplementary-original",
+    "reviewStatus": "verified",
+    "bigIdea": "A matrix transforms every input vector into an output vector. Most directions turn. An eigenvector is a nonzero direction whose output stays on the same line: the eigenvalue tells you the stretch, reversal, or collapse.",
+    "definitions": [
+      {
+        "text": "A matrix acts on a column vector.",
+        "math": "T(v)=Av"
+      },
+      {
+        "text": "An eigenvector v must be nonzero; λ is its eigenvalue.",
+        "math": "Av=\\lambda v,\\qquad v\\ne0"
+      },
+      {
+        "text": "The kernel consists of inputs sent to zero; the range consists of all outputs."
+      }
+    ],
+    "reasoning": "Rearrange Av = λv to (A−λI)v = 0. A nonzero solution exists only when A−λI is singular. In two dimensions that means its determinant is zero. Solve that scalar equation first, then solve a homogeneous system for each eigenvalue.",
+    "formulas": [
+      {
+        "text": "The characteristic equation.",
+        "math": "\\det(A-\\lambda I)=0"
+      },
+      {
+        "text": "Two-by-two matrix multiplication.",
+        "math": "\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}ax+by\\\\cx+dy\\end{bmatrix}"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Beginner · a diagonal stretch",
+        "difficulty": 1,
+        "steps": [
+          {
+            "text": "The matrix scales horizontal and vertical directions separately.",
+            "math": "A=\\begin{bmatrix}2&0\\\\0&3\\end{bmatrix}"
+          },
+          {
+            "text": "Multiply the horizontal unit vector.",
+            "math": "A\\begin{bmatrix}1\\\\0\\end{bmatrix}=\\begin{bmatrix}2\\\\0\\end{bmatrix}=2\\begin{bmatrix}1\\\\0\\end{bmatrix}"
+          },
+          {
+            "text": "Its eigenvalue is 2. The vertical unit vector similarly has eigenvalue 3."
+          }
+        ]
+      },
+      {
+        "title": "Intermediate · a triangular matrix",
+        "difficulty": 2,
+        "steps": [
+          {
+            "text": "Form the characteristic determinant.",
+            "math": "A=\\begin{bmatrix}2&1\\\\0&3\\end{bmatrix},\\quad\\det(A-\\lambda I)=(2-\\lambda)(3-\\lambda)"
+          },
+          {
+            "text": "The roots are 2 and 3. For λ = 3 solve the first row.",
+            "math": "-x+y=0\\quad\\Longrightarrow\\quad y=x"
+          },
+          {
+            "text": "Choose x = 1 and check.",
+            "math": "A\\begin{bmatrix}1\\\\1\\end{bmatrix}=\\begin{bmatrix}3\\\\3\\end{bmatrix}=3\\begin{bmatrix}1\\\\1\\end{bmatrix}"
+          }
+        ]
+      },
+      {
+        "title": "Challenge · no real eigenvector",
+        "difficulty": 3,
+        "steps": [
+          {
+            "text": "Consider a 90-degree rotation.",
+            "math": "A=\\begin{bmatrix}0&-1\\\\1&0\\end{bmatrix}"
+          },
+          {
+            "text": "Compute the characteristic polynomial.",
+            "math": "\\det(A-\\lambda I)=\\lambda^2+1"
+          },
+          {
+            "text": "There are no real roots. Every nonzero real vector turns 90 degrees, so no real direction stays on its line. Over complex numbers the eigenvalues are i and −i."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "eigenvalues-1",
+        "difficulty": 1,
+        "prompt": "What eigenvalue belongs to v?",
+        "math": "A=\\begin{bmatrix}4&0\\\\0&2\\end{bmatrix},\\quad v=\\begin{bmatrix}1\\\\0\\end{bmatrix}",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Multiply A by v."
+          },
+          {
+            "text": "Compare the output with v."
+          },
+          {
+            "text": "The first component is multiplied by 4."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Multiply.",
+            "math": "Av=\\begin{bmatrix}4\\\\0\\end{bmatrix}"
+          },
+          {
+            "text": "This is 4v.",
+            "math": "\\lambda=4"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": 4,
+        "lessonId": "eigenvalues"
+      },
+      {
+        "id": "eigenvalues-2",
+        "difficulty": 2,
+        "prompt": "Enter Av as a column matrix.",
+        "math": "A=\\begin{bmatrix}2&1\\\\0&3\\end{bmatrix},\\quad v=\\begin{bmatrix}1\\\\1\\end{bmatrix}",
+        "answerType": "matrix",
+        "hints": [
+          {
+            "text": "Use each row against the column."
+          },
+          {
+            "text": "First output: 2·1 + 1·1."
+          },
+          {
+            "text": "Second output: 0·1 + 3·1."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Compute row products.",
+            "math": "Av=\\begin{bmatrix}2+1\\\\0+3\\end{bmatrix}"
+          },
+          {
+            "text": "Sum.",
+            "math": "Av=\\begin{bmatrix}3\\\\3\\end{bmatrix}"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": [
+          [
+            3
+          ],
+          [
+            3
+          ]
+        ],
+        "lessonId": "eigenvalues"
+      },
+      {
+        "id": "eigenvalues-3",
+        "difficulty": 3,
+        "prompt": "Is the zero vector an eigenvector?",
+        "math": "A0=\\lambda0",
+        "answerType": "multiple-choice",
+        "hints": [
+          {
+            "text": "Read the nonzero condition in the definition."
+          },
+          {
+            "text": "The equation holds for zero for every λ."
+          },
+          {
+            "text": "Zero does not select a direction or a particular stretch."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Zero always satisfies the equation but is excluded by definition."
+          },
+          {
+            "text": "An eigenvector must describe a nonzero direction."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": "No",
+        "choices": [
+          "Yes",
+          "No"
+        ],
+        "lessonId": "eigenvalues"
+      }
+    ],
+    "mistakes": [
+      "Eigenvalues are scalars; eigenvectors are nonzero vectors.",
+      "Not every real matrix has a real eigenvector."
+    ],
+    "summary": "Eigenvectors reveal invariant directions of a transformation. Always check Av = λv after solving.",
+    "teachingPrompts": [
+      "Explain why the zero vector must be excluded.",
+      "Show what a negative eigenvalue does to a direction."
+    ],
+    "visualization": "transform"
+  },
+  {
+    "id": "separable",
+    "courseId": "differential-equations",
+    "chapter": "Foundations",
+    "section": "Supplement",
+    "title": "Separable equations & growth",
+    "description": "Connect a rate of change to the quantity that changes.",
+    "difficulty": "beginner",
+    "keywords": [
+      "ODE",
+      "ordinary differential equation",
+      "separation of variables",
+      "exponential growth",
+      "decay",
+      "initial value problem",
+      "IVP"
+    ],
+    "prerequisites": [],
+    "learningObjectives": [
+      "Interpret a derivative as a rate.",
+      "Separate and integrate an equation.",
+      "Use an initial condition and retain equilibrium solutions."
+    ],
+    "estimatedMinutes": 20,
+    "sourceReferences": [],
+    "provenance": "supplementary-original",
+    "reviewStatus": "verified",
+    "bigIdea": "A differential equation relates a changing quantity to its rate of change. If a population grows at a fixed percentage rate, more population means more growth. A separable equation lets us collect all y factors on one side and all x factors on the other.",
+    "definitions": [
+      {
+        "text": "dy/dx is the instantaneous rate of change of y with respect to x.",
+        "math": "\\frac{dy}{dx}=f(x,y)"
+      },
+      {
+        "text": "A separable equation factors into a function of x times a function of y.",
+        "math": "y\\prime=g(x)h(y)"
+      },
+      {
+        "text": "An initial condition selects one curve from a family.",
+        "math": "y(x_0)=y_0"
+      }
+    ],
+    "reasoning": "Where h(y) is nonzero, divide by h(y) and use the chain rule to integrate. Before dividing, check h(y)=0 separately: those constant solutions can be lost. An integration constant is needed because differentiation removes additive constants.",
+    "formulas": [
+      {
+        "text": "Separation on intervals where h(y) ≠ 0.",
+        "math": "\\int\\frac{1}{h(y)}\\,dy=\\int g(x)\\,dx+C"
+      },
+      {
+        "text": "Constant percentage growth or decay.",
+        "math": "y\\prime=ky\\quad\\Longrightarrow\\quad y=Ce^{kx}"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Beginner · integrate a known rate",
+        "difficulty": 1,
+        "steps": [
+          {
+            "text": "The rate depends only on x.",
+            "math": "y\\prime=2x"
+          },
+          {
+            "text": "Integrate both sides.",
+            "math": "y=\\int2x\\,dx=x^2+C"
+          },
+          {
+            "text": "If y(0) = 3, then C = 3.",
+            "math": "y=x^2+3"
+          }
+        ]
+      },
+      {
+        "title": "Intermediate · exponential growth",
+        "difficulty": 2,
+        "steps": [
+          {
+            "text": "Separate for nonzero y; retain y = 0 separately.",
+            "math": "y\\prime=2y\\quad\\Longrightarrow\\quad\\frac{dy}{y}=2\\,dx"
+          },
+          {
+            "text": "Integrate and exponentiate.",
+            "math": "\\ln|y|=2x+C_1\\quad\\Longrightarrow\\quad y=Ce^{2x}"
+          },
+          {
+            "text": "Use y(0) = 3.",
+            "math": "3=C\\quad\\Longrightarrow\\quad y=3e^{2x}"
+          },
+          {
+            "text": "Check the derivative is 2y and the initial value is 3."
+          }
+        ]
+      },
+      {
+        "title": "Challenge · a finite domain",
+        "difficulty": 3,
+        "steps": [
+          {
+            "text": "Separate where y is nonzero; y = 0 is also a solution.",
+            "math": "y\\prime=y^2,\\quad\\frac{dy}{y^2}=dx"
+          },
+          {
+            "text": "Integrate and solve for y.",
+            "math": "-\\frac1y=x+C"
+          },
+          {
+            "text": "Apply y(0) = 1.",
+            "math": "C=-1,\\quad y=\\frac1{1-x}"
+          },
+          {
+            "text": "The maximal interval containing 0 is x < 1. The solution blows up as x approaches 1; it cannot continue through that point."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "separable-1",
+        "difficulty": 1,
+        "prompt": "Find C if y(0) = 4.",
+        "math": "y=x^2+C",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Substitute x = 0."
+          },
+          {
+            "text": "Use the given y value."
+          },
+          {
+            "text": "Subtract 0²."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Apply the initial condition.",
+            "math": "4=0^2+C"
+          },
+          {
+            "text": "Solve.",
+            "math": "C=4"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": 4,
+        "lessonId": "separable"
+      },
+      {
+        "id": "separable-2",
+        "difficulty": 2,
+        "prompt": "Find k when the solution satisfies y′ = −3y.",
+        "math": "y=5e^{kx}",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Differentiate the exponential."
+          },
+          {
+            "text": "Compare y′ with ky."
+          },
+          {
+            "text": "Match the rate in the equation."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Differentiate.",
+            "math": "y\\prime=5ke^{kx}=ky"
+          },
+          {
+            "text": "The specified rate is −3, so k = −3."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": -3,
+        "lessonId": "separable"
+      },
+      {
+        "id": "separable-3",
+        "difficulty": 3,
+        "prompt": "Which solution is lost if you divide by y?",
+        "math": "y\\prime=xy",
+        "answerType": "multiple-choice",
+        "hints": [
+          {
+            "text": "Division assumes y is nonzero."
+          },
+          {
+            "text": "Try a constant y whose derivative is zero."
+          },
+          {
+            "text": "Check both sides at y = 0."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "The zero function has derivative zero."
+          },
+          {
+            "text": "xy is also zero, so y = 0 is an equilibrium solution."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": "y = 0",
+        "choices": [
+          "y = 0",
+          "y = x",
+          "y = 1"
+        ],
+        "lessonId": "separable"
+      }
+    ],
+    "mistakes": [
+      "Check equilibrium solutions before dividing by a function of y.",
+      "Keep the integration constant and specify intervals when denominators can vanish."
+    ],
+    "summary": "Separate factors, integrate, recover any equilibrium solutions, apply the initial condition, and check the result in the original equation.",
+    "teachingPrompts": [
+      "Explain why dividing by y can lose a solution.",
+      "Interpret a negative growth rate physically."
+    ],
+    "visualization": "growth"
+  },
+  {
+    "id": "linear-ode",
+    "courseId": "differential-equations",
+    "chapter": "Methods and applications",
+    "section": "Supplement",
+    "title": "First-order linear equations",
+    "description": "Use an integrating factor to turn two terms into one derivative.",
+    "difficulty": "intermediate",
+    "keywords": [
+      "ODE",
+      "integrating factor",
+      "first order linear",
+      "product rule",
+      "dy/dx",
+      "initial value problem"
+    ],
+    "prerequisites": [
+      "separable"
+    ],
+    "learningObjectives": [
+      "Put an equation in standard form.",
+      "Derive and apply an integrating factor.",
+      "Check the general solution and an initial value."
+    ],
+    "estimatedMinutes": 20,
+    "sourceReferences": [],
+    "provenance": "supplementary-original",
+    "reviewStatus": "verified",
+    "bigIdea": "The product rule contains two terms: one differentiates the first factor and one differentiates the second. An integrating factor deliberately reshapes a linear equation so its left side becomes exactly that product derivative.",
+    "definitions": [
+      {
+        "text": "Standard linear form; P and Q depend on x, and y is not squared.",
+        "math": "y\\prime+P(x)y=Q(x)"
+      },
+      {
+        "text": "An integrating factor is a nonzero multiplier μ chosen so μ′ = Pμ.",
+        "math": "\\mu(x)=e^{\\int P(x)\\,dx}"
+      }
+    ],
+    "reasoning": "Multiplying by μ gives μy′ + μPy. Since μ′=μP, the left side is μy′+μ′y, the derivative of μy. Integrating this derivative leaves a single algebraic step to isolate y. Work on an interval where P and Q are continuous.",
+    "formulas": [
+      {
+        "text": "Product derivative and integrated form.",
+        "math": "(\\mu y)\\prime=\\mu Q,\\qquad y=\\frac{\\int\\mu Q\\,dx+C}{\\mu}"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Beginner · constant coefficient",
+        "difficulty": 1,
+        "steps": [
+          {
+            "text": "Identify P = 2 and Q = 6.",
+            "math": "y\\prime+2y=6"
+          },
+          {
+            "text": "Integrate P and exponentiate.",
+            "math": "\\mu=e^{\\int2\\,dx}=e^{2x}"
+          },
+          {
+            "text": "Multiply and recognize the product rule.",
+            "math": "(e^{2x}y)\\prime=6e^{2x}"
+          },
+          {
+            "text": "Integrate both sides.",
+            "math": "e^{2x}y=3e^{2x}+C"
+          },
+          {
+            "text": "Divide by the integrating factor.",
+            "math": "y=3+Ce^{-2x}"
+          }
+        ]
+      },
+      {
+        "title": "Intermediate · an initial value",
+        "difficulty": 2,
+        "steps": [
+          {
+            "text": "Use the general solution of y′ + 2y = 6.",
+            "math": "y=3+Ce^{-2x},\\quad y(0)=5"
+          },
+          {
+            "text": "Substitute x = 0.",
+            "math": "5=3+C\\quad\\Longrightarrow\\quad C=2"
+          },
+          {
+            "text": "Differentiate and check.",
+            "math": "y\\prime=-4e^{-2x},\\quad y\\prime+2y=6"
+          }
+        ]
+      },
+      {
+        "title": "Challenge · a variable coefficient",
+        "difficulty": 3,
+        "steps": [
+          {
+            "text": "Work on x > 0 so 1/x is continuous.",
+            "math": "y\\prime+\\frac1x y=x"
+          },
+          {
+            "text": "Find the integrating factor.",
+            "math": "\\mu=e^{\\ln x}=x"
+          },
+          {
+            "text": "Multiply by x, integrate, and divide.",
+            "math": "(xy)\\prime=x^2,\\quad xy=\\frac{x^3}{3}+C,\\quad y=\\frac{x^2}{3}+\\frac Cx"
+          },
+          {
+            "text": "Check the C terms cancel in y′ + y/x.",
+            "math": "\\left(\\frac{2x}3-\\frac C{x^2}\\right)+\\left(\\frac x3+\\frac C{x^2}\\right)=x"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "linear-ode-1",
+        "difficulty": 1,
+        "prompt": "For μ = eᵏˣ, what is k?",
+        "math": "y\\prime+4y=8",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Identify P in standard form."
+          },
+          {
+            "text": "Integrate the constant P."
+          },
+          {
+            "text": "Exponentiate the antiderivative."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "P = 4, so its antiderivative is 4x.",
+            "math": "\\int4\\,dx=4x"
+          },
+          {
+            "text": "The integrating factor is e⁴ˣ, so k = 4."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": 4,
+        "lessonId": "linear-ode"
+      },
+      {
+        "id": "linear-ode-2",
+        "difficulty": 2,
+        "prompt": "Find C using the initial condition.",
+        "math": "y=3+Ce^{-2x},\\quad y(0)=7",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Set x = 0."
+          },
+          {
+            "text": "e⁰ equals 1."
+          },
+          {
+            "text": "Subtract the equilibrium value 3."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Substitute.",
+            "math": "7=3+C"
+          },
+          {
+            "text": "Subtract 3.",
+            "math": "C=4"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": 4,
+        "lessonId": "linear-ode"
+      },
+      {
+        "id": "linear-ode-3",
+        "difficulty": 3,
+        "prompt": "Which equation is linear in y?",
+        "math": "\\text{Choose one.}",
+        "answerType": "multiple-choice",
+        "hints": [
+          {
+            "text": "y and its derivative must occur to the first power."
+          },
+          {
+            "text": "The coefficient can depend on x."
+          },
+          {
+            "text": "A y² term makes the equation nonlinear."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "A coefficient x multiplying y is allowed."
+          },
+          {
+            "text": "y′ + xy = x² has standard linear form with P(x) = x and Q(x) = x²."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": "y′ + xy = x²",
+        "choices": [
+          "y′ + y² = x",
+          "y′ + xy = x²",
+          "y′ = sin(y)"
+        ],
+        "lessonId": "linear-ode"
+      }
+    ],
+    "mistakes": [
+      "Divide by the coefficient of y′ before identifying P.",
+      "Do not forget to divide by μ after integrating."
+    ],
+    "summary": "An integrating factor is a product-rule device, not a formula to memorize without meaning. Verify by differentiating the result.",
+    "teachingPrompts": [
+      "Derive μ′ = Pμ from the product rule.",
+      "Explain why the integration constant cannot be dropped."
+    ],
+    "visualization": "slope"
+  },
+  {
+    "id": "second-order",
+    "courseId": "differential-equations",
+    "chapter": "Methods and applications",
+    "section": "Supplement",
+    "title": "Second-order equations & oscillation",
+    "description": "Connect characteristic roots to growth, decay, and oscillation.",
+    "difficulty": "intermediate",
+    "keywords": [
+      "higher order",
+      "homogeneous",
+      "characteristic equation",
+      "superposition",
+      "Wronskian",
+      "second order",
+      "undetermined coefficients",
+      "variation of parameters"
+    ],
+    "prerequisites": [
+      "linear-ode"
+    ],
+    "learningObjectives": [
+      "Use an exponential trial solution.",
+      "Handle distinct, repeated, and complex roots.",
+      "Apply two initial conditions."
+    ],
+    "estimatedMinutes": 20,
+    "sourceReferences": [],
+    "provenance": "supplementary-original",
+    "reviewStatus": "verified",
+    "bigIdea": "A second-order equation tracks how acceleration relates to position and velocity. With constant coefficients, exponentials are convenient because each derivative only multiplies them by a constant. Complex roots package sine and cosine oscillations into real solutions.",
+    "definitions": [
+      {
+        "text": "A homogeneous constant-coefficient equation has zero forcing.",
+        "math": "ay\\prime\\prime+by\\prime+cy=0,\\quad a\\ne0"
+      },
+      {
+        "text": "Superposition means sums of solutions are solutions for a homogeneous linear equation."
+      },
+      {
+        "text": "Two initial conditions usually specify position and velocity.",
+        "math": "y(0)=y_0,\\quad y\\prime(0)=v_0"
+      }
+    ],
+    "reasoning": "Substitute y=eʳˣ; its first and second derivatives are reʳˣ and r²eʳˣ. Dividing by the nonzero exponential gives ar²+br+c=0. Two independent solutions span the solution space. A repeated root needs xeʳˣ as the second solution; complex conjugate roots yield real sine and cosine factors.",
+    "formulas": [
+      {
+        "text": "Characteristic equation.",
+        "math": "ar^2+br+c=0"
+      },
+      {
+        "text": "Distinct real roots.",
+        "math": "y=C_1e^{r_1x}+C_2e^{r_2x}"
+      },
+      {
+        "text": "Repeated root r.",
+        "math": "y=(C_1+C_2x)e^{rx}"
+      },
+      {
+        "text": "Roots α ± iβ, with β ≠ 0.",
+        "math": "y=e^{\\alpha x}(C_1\\cos\\beta x+C_2\\sin\\beta x)"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Beginner · distinct roots",
+        "difficulty": 1,
+        "steps": [
+          {
+            "text": "Form the polynomial.",
+            "math": "y\\prime\\prime-3y\\prime+2y=0\\quad\\Longrightarrow\\quad r^2-3r+2=0"
+          },
+          {
+            "text": "Factor.",
+            "math": "(r-1)(r-2)=0"
+          },
+          {
+            "text": "Write the two independent exponentials.",
+            "math": "y=C_1e^x+C_2e^{2x}"
+          }
+        ]
+      },
+      {
+        "title": "Intermediate · repeated root",
+        "difficulty": 2,
+        "steps": [
+          {
+            "text": "Factor the characteristic equation.",
+            "math": "y\\prime\\prime+2y\\prime+y=0,\\quad(r+1)^2=0"
+          },
+          {
+            "text": "Use the repeated-root form.",
+            "math": "y=(C_1+C_2x)e^{-x}"
+          },
+          {
+            "text": "Differentiate xe⁻ˣ twice to verify the second solution.",
+            "math": "y=xe^{-x},\\quad y\\prime=(1-x)e^{-x},\\quad y\\prime\\prime=(x-2)e^{-x}"
+          },
+          {
+            "text": "Combine the coefficients: (x−2)+2(1−x)+x=0."
+          }
+        ]
+      },
+      {
+        "title": "Challenge · initial oscillation",
+        "difficulty": 3,
+        "steps": [
+          {
+            "text": "The characteristic roots are ±2i.",
+            "math": "y\\prime\\prime+4y=0,\\quad y(0)=1,\\quad y\\prime(0)=0"
+          },
+          {
+            "text": "Write the real family.",
+            "math": "y=C_1\\cos2x+C_2\\sin2x"
+          },
+          {
+            "text": "The first condition gives C₁ = 1. Differentiate to use the second.",
+            "math": "y\\prime=-2C_1\\sin2x+2C_2\\cos2x,\\quad0=2C_2"
+          },
+          {
+            "text": "The selected solution oscillates with angular frequency 2.",
+            "math": "y=\\cos2x"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "second-order-1",
+        "difficulty": 1,
+        "prompt": "Give the larger characteristic root.",
+        "math": "y\\prime\\prime-5y\\prime+6y=0",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Write the characteristic quadratic."
+          },
+          {
+            "text": "Factor into two linear factors."
+          },
+          {
+            "text": "Find two numbers with sum 5 and product 6."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Factor.",
+            "math": "r^2-5r+6=(r-2)(r-3)"
+          },
+          {
+            "text": "The roots are 2 and 3; the larger is 3."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": 3,
+        "lessonId": "second-order"
+      },
+      {
+        "id": "second-order-2",
+        "difficulty": 2,
+        "prompt": "Find C₂.",
+        "math": "y=C_1\\cos2x+C_2\\sin2x,\\quad y\\prime(0)=6",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Differentiate first."
+          },
+          {
+            "text": "At x = 0, sine is zero and cosine is one."
+          },
+          {
+            "text": "Solve 2C₂ = 6."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Differentiate and substitute.",
+            "math": "y\\prime(0)=2C_2=6"
+          },
+          {
+            "text": "Divide by 2.",
+            "math": "C_2=3"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": 3,
+        "lessonId": "second-order"
+      },
+      {
+        "id": "second-order-3",
+        "difficulty": 3,
+        "prompt": "Which is the second independent solution for a repeated root r = −1?",
+        "math": "(r+1)^2=0",
+        "answerType": "multiple-choice",
+        "hints": [
+          {
+            "text": "Repeating the same exponential does not create independence."
+          },
+          {
+            "text": "The repeated-root formula introduces a factor x."
+          },
+          {
+            "text": "Compare with (C₁ + C₂x)e⁻ˣ."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "One solution is e⁻ˣ."
+          },
+          {
+            "text": "The second is xe⁻ˣ; direct substitution confirms it satisfies the equation."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": "xe⁻ˣ",
+        "choices": [
+          "2e⁻ˣ",
+          "xe⁻ˣ",
+          "eˣ"
+        ],
+        "lessonId": "second-order"
+      }
+    ],
+    "mistakes": [
+      "Two copies of the same exponential are not independent.",
+      "A second-order initial-value problem needs two conditions."
+    ],
+    "summary": "The characteristic roots determine the form of a homogeneous constant-coefficient solution. Substitute to check and use both initial conditions.",
+    "teachingPrompts": [
+      "Explain why y=eʳˣ is a useful trial.",
+      "Describe the difference between a repeated root and two distinct roots."
+    ],
+    "visualization": "oscillator"
+  },
+  {
+    "id": "euler",
+    "courseId": "differential-equations",
+    "chapter": "Methods and applications",
+    "section": "Supplement",
+    "title": "Euler’s method & slope fields",
+    "description": "Approximate a solution by following its local direction.",
+    "difficulty": "intermediate",
+    "keywords": [
+      "numerical methods",
+      "Euler method",
+      "slope field",
+      "solution curves",
+      "phase portrait",
+      "step size",
+      "approximation"
+    ],
+    "prerequisites": [
+      "separable"
+    ],
+    "learningObjectives": [
+      "Read a slope field.",
+      "Calculate Euler steps.",
+      "Understand approximation error and step-size limits."
+    ],
+    "estimatedMinutes": 20,
+    "sourceReferences": [],
+    "provenance": "supplementary-original",
+    "reviewStatus": "verified",
+    "bigIdea": "At each point a differential equation tells us a direction. Euler’s method follows that direction for a short step, then asks for a new direction. It uses tangent-line approximations, so the computed values generally differ from the exact curve.",
+    "definitions": [
+      {
+        "text": "A slope field draws small line segments with slope f(x,y).",
+        "math": "y\\prime=f(x,y)"
+      },
+      {
+        "text": "A step size h is the horizontal distance between approximation points.",
+        "math": "x_{n+1}=x_n+h"
+      },
+      {
+        "text": "The Euler update uses the slope at the beginning of the step.",
+        "math": "y_{n+1}=y_n+h f(x_n,y_n)"
+      }
+    ],
+    "reasoning": "The derivative is the limiting change in y divided by change in x. For a small finite h, approximate the change by hf(x,y). Taylor’s theorem gives a one-step error proportional to h² for a sufficiently smooth solution; over a fixed interval the global error is typically proportional to h. Smaller steps often help, but explicit Euler can still be unstable for stiff equations.",
+    "formulas": [
+      {
+        "text": "Euler’s method.",
+        "math": "(x_{n+1},y_{n+1})=(x_n+h,\\;y_n+hf(x_n,y_n))"
+      },
+      {
+        "text": "For y′ = ky, the update is a geometric multiplier.",
+        "math": "y_{n+1}=(1+hk)y_n"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Beginner · one step",
+        "difficulty": 1,
+        "steps": [
+          {
+            "text": "Use y′ = y with initial value 1 and h = 0.1.",
+            "math": "x_0=0,\\quad y_0=1"
+          },
+          {
+            "text": "The starting slope is 1.",
+            "math": "y_1=1+0.1(1)=1.1"
+          },
+          {
+            "text": "This estimates y(0.1); the exact value e⁰·¹ is approximately 1.10517."
+          }
+        ]
+      },
+      {
+        "title": "Intermediate · a second step",
+        "difficulty": 2,
+        "steps": [
+          {
+            "text": "Reuse the new value to calculate the next slope.",
+            "math": "f(0.1,1.1)=1.1"
+          },
+          {
+            "text": "Step again.",
+            "math": "y_2=1.1+0.1(1.1)=1.21"
+          },
+          {
+            "text": "The exact value at 0.2 is approximately 1.22140; the error is about −0.01140."
+          }
+        ]
+      },
+      {
+        "title": "Challenge · unstable decay",
+        "difficulty": 3,
+        "steps": [
+          {
+            "text": "The exact solution decays for this equation.",
+            "math": "y\\prime=-10y,\\quad y(0)=1,\\quad y=e^{-10x}"
+          },
+          {
+            "text": "Choose an overly large step h = 0.3.",
+            "math": "y_{n+1}=(1-3)y_n=-2y_n"
+          },
+          {
+            "text": "The sequence begins 1, −2, 4, −8 and grows in magnitude. The approximation is unstable although the actual solution decays."
+          },
+          {
+            "text": "For this negative coefficient stability requires |1−10h| < 1, or 0 < h < 0.2."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "euler-1",
+        "difficulty": 1,
+        "prompt": "Compute y₁.",
+        "math": "y\\prime=2y,\\quad y_0=1,\\quad h=0.1",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Find the starting slope."
+          },
+          {
+            "text": "Multiply the slope by h."
+          },
+          {
+            "text": "Add the increment to y₀."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "Compute slope and increment.",
+            "math": "f=2,\\quad hf=0.2"
+          },
+          {
+            "text": "Update.",
+            "math": "y_1=1+0.2=1.2"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": 1.2,
+        "lessonId": "euler"
+      },
+      {
+        "id": "euler-2",
+        "difficulty": 2,
+        "prompt": "Compute y₂ using two Euler steps.",
+        "math": "y\\prime=y,\\quad y_0=2,\\quad h=0.5",
+        "answerType": "numeric",
+        "hints": [
+          {
+            "text": "Compute y₁ first."
+          },
+          {
+            "text": "Use the new y value as the next slope."
+          },
+          {
+            "text": "Each step multiplies y by 1.5."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "First step.",
+            "math": "y_1=2+0.5(2)=3"
+          },
+          {
+            "text": "Second step.",
+            "math": "y_2=3+0.5(3)=4.5"
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": 4.5,
+        "lessonId": "euler"
+      },
+      {
+        "id": "euler-3",
+        "difficulty": 3,
+        "prompt": "For decay y′ = −10y, is h = 0.3 stable?",
+        "math": "y_{n+1}=(1-10h)y_n",
+        "answerType": "multiple-choice",
+        "hints": [
+          {
+            "text": "Find the multiplier."
+          },
+          {
+            "text": "Check its absolute value."
+          },
+          {
+            "text": "Magnitude greater than 1 amplifies each step."
+          }
+        ],
+        "solutionSteps": [
+          {
+            "text": "The multiplier is −2.",
+            "math": "|1-10(0.3)|=2"
+          },
+          {
+            "text": "The magnitude exceeds 1, so this step size is unstable."
+          }
+        ],
+        "verificationStatus": "verified",
+        "answer": "No",
+        "choices": [
+          "Yes",
+          "No"
+        ],
+        "lessonId": "euler"
+      }
+    ],
+    "mistakes": [
+      "Use the new y value for the next slope.",
+      "Euler output is an approximation, not an exact solution; label it accordingly."
+    ],
+    "summary": "Euler follows local slopes. Compare with an exact solution when available and inspect both error and stability.",
+    "teachingPrompts": [
+      "Explain the tangent-line approximation using a sketch.",
+      "Give a case where a large step contradicts the true decay."
+    ],
+    "visualization": "euler"
+  }
+]
