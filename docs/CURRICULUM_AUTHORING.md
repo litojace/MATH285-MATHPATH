@@ -20,9 +20,10 @@ from the ten practice problems. Existing practice IDs retain their content.
 Inner Product Spaces includes three additional examples and exercises about
 weighted inner products and function-space projection.
 
-To regenerate, install Python 3 and SymPy, then run from the repository root:
+To regenerate, install Python 3 and the authoring dependencies, then run from the repository root:
 
 ```sh
+python3 -m pip install -r scripts/requirements-authoring.txt
 python3 scripts/build_curriculum.py
 npm test
 npm run build
@@ -43,7 +44,7 @@ the Playwright browser. The suite checks all 51 pages at phone and desktop width
 Generation stops on a failed symbolic assertion. Checks include substitution
 into systems, inverse products, projection orthogonality, ODE residuals and
 initial/boundary values, and forward Laplace transforms of inverse results.
-The 673 newly authored problems' assertion records are saved in
+The 699 verification records for authored problems and expanded examples are saved in
 `docs/curriculum-verification.json`. Tests check section coverage, numbering,
 IDs, prerequisite resolution, all rendered LaTeX, and practice interactions.
 
@@ -66,3 +67,16 @@ owner's requested 27-section numbering is preserved. Three vectors are described
 as a basis for their span, rather than for R⁴ or P₅. The characteristic polynomial
 is the determinant of A−λI, and real and complex eigenvalue questions are
 distinguished explicitly.
+
+Worked-example detail is maintained in `scripts/solution_details.py`,
+`scripts/differential_details.py`, and `scripts/legacy_example_details.py`.
+These add individual matrix-entry operations, derivative rules, integration,
+partial-fraction coefficient calculations, and initial-condition algebra.
+Unrecognized LaTeX expressions are skipped by the arithmetic expander rather
+than interpreted as a different mathematical expression.
+
+The shared math renderer separates equation chains and grouped statements into
+vertical lines. Wide expressions use local quantities with complete definitions
+below them; wide matrices show indexed entries with their row and column
+positions. Browser checks cover every lesson, all examples, revealed practice
+solutions and hints, and the formula library at 320px and 1440px.

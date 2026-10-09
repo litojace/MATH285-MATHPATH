@@ -16,12 +16,19 @@ for(const width of [320,1440]){
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
    }
   });
+  test('formula library fits vertically',async({page})=>{
+   await page.goto('/library');
+   await expect.poll(async()=>page.locator('.math-render').evaluateAll(nodes=>nodes.filter(node=>node.clientWidth&&node.scrollWidth>node.clientWidth+1).map(node=>node.getAttribute('data-math')))).toEqual([]);
+   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  });
   for(const lesson of curriculum){
    test(`${lesson.courseId} ${lesson.section}: learn, practice, solutions`,async({page})=>{
     const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto(`/lessons/${lesson.id}`);
     await expect(page.getByRole('heading',{level:1,name:lesson.title,exact:true})).toBeVisible();
     await expect(page.getByRole('button',{name:'Tutor mode',exact:true})).toHaveCount(0);
+    await page.locator('details.example').evaluateAll(examples=>examples.forEach(example=>example.setAttribute('open','')));
+    await expect.poll(async()=>page.locator('.math-render').evaluateAll(nodes=>nodes.filter(node=>node.clientWidth&&node.scrollWidth>node.clientWidth+1).map(node=>node.getAttribute('data-math')))).toEqual([]);
     if(lesson.methodGuide){
      const guide=page.getByRole('region',{name:'Detailed method guide'});
      await expect(guide.locator('.method-guide-part')).toHaveCount(3);
@@ -47,6 +54,8 @@ for(const width of [320,1440]){
     }
     await page.getByRole('button',{name:'Show Step-by-Step Solution',exact:true}).evaluateAll(buttons=>buttons.forEach(button=>(button as HTMLButtonElement).click()));
     await expect(page.locator('.solution')).toHaveCount(lesson.exercises.length);
+    for(let hint=0;hint<3;hint++)await page.getByRole('button',{name:/^Hint [123] of 3$/}).evaluateAll(buttons=>buttons.forEach(button=>(button as HTMLButtonElement).click()));
+    await expect.poll(async()=>page.locator('.math-render').evaluateAll(nodes=>nodes.filter(node=>node.clientWidth&&node.scrollWidth>node.clientWidth+1).map(node=>node.getAttribute('data-math')))).toEqual([]);
     await expect(page.locator('.katex-error')).toHaveCount(0);
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     expect(errors).toEqual([]);

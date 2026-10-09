@@ -8,6 +8,9 @@ import subprocess
 from pathlib import Path
 import sympy as S
 from linear_professor import expand_linear
+from solution_details import enrich_examples
+from differential_details import expand_problem
+from legacy_example_details import expand_starters
 
 x, y, t, z, s, a, b, c = S.symbols('x y t z s a b c', real=True)
 n = S.symbols('n', integer=True, nonnegative=True)
@@ -330,6 +333,9 @@ def L(f):
     return S.laplace_transform(f, t, s, noconds=True)
 
 def de_problem(section, k, mode):
+    return expand_problem(_de_problem(section,k,mode),section,k,mode,st)
+
+def _de_problem(section, k, mode):
     if section == '1.1':
         if mode==0:
             order=k
@@ -1097,6 +1103,8 @@ def build():
     assert len(result)==51 and sum(l['courseId']=='linear-algebra' for l in result)==27
     assert sum(l['courseId']=='differential-equations' for l in result)==24
     expand_linear(result,audit,P,st,latex)
+    enrich_examples(result,audit,st)
+    expand_starters(result,audit,st)
     assert sum(len(l['exercises']) for l in result)==567
     ids={l['id'] for l in result}
     assert all(p in ids for l in result for p in l['prerequisites'])

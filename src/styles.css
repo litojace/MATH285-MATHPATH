@@ -77,6 +77,12 @@
 .source-references{padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);margin-bottom:24px}
 .back-to-top{position:fixed;right:max(24px,env(safe-area-inset-right));bottom:calc(24px + env(safe-area-inset-bottom));z-index:40;display:flex;align-items:center;justify-content:center;gap:8px;min-width:48px;min-height:48px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--blue);box-shadow:0 6px 24px #00000020;font-size:.8rem;font-weight:750;cursor:pointer}
 .back-to-top:hover{border-color:var(--blue);background:var(--blue-2)}
+.math-block{overflow:visible;min-width:0;width:100%;padding:.6rem 0}
+.math-line,.math-render{min-width:0;max-width:100%}
+.math-block .katex-display{margin:.4em 0;text-align:left}
+.math-block .katex-display>.katex{text-align:left}
+.math-definition{margin-block:16px;padding:12px 0;border-top:1px solid var(--line);min-width:0}
+.math-definition>p{font-size:.78rem;color:var(--muted);margin:0 0 10px}
 @media(max-width:600px){.back-to-top{right:max(16px,env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));padding:12px}.back-to-top span{display:none}}
 @media(max-width:400px){.method-guide-part{grid-template-columns:minmax(0,1fr);gap:10px}}
 .desktop-search .suggestions{left:auto;right:0;width:390px;max-width:calc(100vw - 32px)}
@@ -107,3 +113,7 @@
 .prerequisite-content strong{font-size:.9rem;line-height:1.45;overflow-wrap:anywhere}
 .prerequisite-link>svg{flex-shrink:0;color:var(--blue)}
 @media(max-width:400px){.search-page .page-search{grid-template-columns:auto minmax(0,1fr) auto}.search-page .page-search .button{grid-column:1/-1;grid-row:2;width:100%}.prerequisite-box{padding:16px}.prerequisite-link{gap:10px;padding:12px}.prerequisite-section{padding:4px 6px}.prerequisite-heading{align-items:flex-start}}
+
+.final-answer{margin:20px 24px;padding:20px;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;background:var(--surface);min-width:0}
+.final-answer>strong{display:block;color:var(--blue);font-size:.9rem}
+@media(max-width:640px){.final-answer{margin:16px 12px;padding:16px 12px}}

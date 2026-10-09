@@ -1,6 +1,6 @@
 {
   "tool": "SymPy 1.14.0",
-  "newProblemsChecked": 673,
+  "newProblemsChecked": 699,
   "checks": [
     {
       "id": "linear-algebra-1-1-1",
@@ -7756,6 +7756,272 @@
         {
           "left": "Matrix([[-5*I], [5]])",
           "right": "Matrix([[-5*I], [5]])"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra-4-8-example-5-derivatives",
+      "assertions": [
+        {
+          "left": "-3*C_{2}*sin(3*x) + 3*C_{3}*cos(3*x)",
+          "right": "-3*C_{2}*sin(3*x) + 3*C_{3}*cos(3*x)"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations-6-1-example-3-derivatives",
+      "assertions": [
+        {
+          "left": "7*(C_{1}*sin(7*log(x)) - 7*C_{1}*cos(7*log(x)) - 7*C_{2}*sin(7*log(x)) - C_{2}*cos(7*log(x)))/x**2",
+          "right": "7*(C_{1}*sin(7*log(x)) - 7*C_{1}*cos(7*log(x)) - 7*C_{2}*sin(7*log(x)) - C_{2}*cos(7*log(x)))/x**2"
+        }
+      ]
+    },
+    {
+      "id": "systems-detailed-example-1",
+      "assertions": [
+        {
+          "left": "5",
+          "right": "5"
+        },
+        {
+          "left": "1",
+          "right": "1"
+        }
+      ]
+    },
+    {
+      "id": "systems-detailed-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[7], [4]])",
+          "right": "Matrix([[7], [4]])"
+        }
+      ]
+    },
+    {
+      "id": "systems-detailed-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [8]])",
+          "right": "Matrix([[4], [8]])"
+        }
+      ]
+    },
+    {
+      "id": "vectors-detailed-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[4], [1]])",
+          "right": "Matrix([[4], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "vectors-detailed-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [-2]])",
+          "right": "Matrix([[3], [-2]])"
+        }
+      ]
+    },
+    {
+      "id": "vectors-detailed-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[0], [0]])",
+          "right": "Matrix([[0], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "projection-detailed-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "Matrix([[3], [4]])",
+          "right": "Matrix([[3], [4]])"
+        }
+      ]
+    },
+    {
+      "id": "projection-detailed-example-2",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "Matrix([[3], [1]])",
+          "right": "Matrix([[3], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "projection-detailed-example-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "Matrix([[2], [0]])",
+          "right": "Matrix([[2], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "eigenvalues-detailed-example-1",
+      "assertions": [
+        {
+          "left": "Matrix([[2], [0]])",
+          "right": "Matrix([[2], [0]])"
+        },
+        {
+          "left": "Matrix([[0], [3]])",
+          "right": "Matrix([[0], [3]])"
+        }
+      ]
+    },
+    {
+      "id": "eigenvalues-detailed-example-2",
+      "assertions": [
+        {
+          "left": "Matrix([[3], [3]])",
+          "right": "Matrix([[3], [3]])"
+        },
+        {
+          "left": "Matrix([[2], [0]])",
+          "right": "Matrix([[2], [0]])"
+        }
+      ]
+    },
+    {
+      "id": "eigenvalues-detailed-example-3",
+      "assertions": [
+        {
+          "left": "Matrix([[I], [1]])",
+          "right": "Matrix([[I], [1]])"
+        }
+      ]
+    },
+    {
+      "id": "separable-detailed-example-1",
+      "assertions": [
+        {
+          "left": "2*x",
+          "right": "2*x"
+        },
+        {
+          "left": "3",
+          "right": "3"
+        }
+      ]
+    },
+    {
+      "id": "separable-detailed-example-2",
+      "assertions": [
+        {
+          "left": "6*exp(2*x)",
+          "right": "6*exp(2*x)"
+        }
+      ]
+    },
+    {
+      "id": "separable-detailed-example-3",
+      "assertions": [
+        {
+          "left": "(1 - x)**(-2)",
+          "right": "(1 - x)**(-2)"
+        }
+      ]
+    },
+    {
+      "id": "linear-ode-detailed-example-1",
+      "assertions": [
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "linear-ode-detailed-example-2",
+      "assertions": [
+        {
+          "left": "6",
+          "right": "6"
+        }
+      ]
+    },
+    {
+      "id": "linear-ode-detailed-example-3",
+      "assertions": [
+        {
+          "left": "-C/x**2 + 2*x/3 + (C/x + x**2/3)/x",
+          "right": "x"
+        }
+      ]
+    },
+    {
+      "id": "second-order-detailed-example-1",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "second-order-detailed-example-2",
+      "assertions": [
+        {
+          "left": "-x*exp(-x) + (x - 2)*exp(-x) + 2*exp(-x)",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "second-order-detailed-example-3",
+      "assertions": [
+        {
+          "left": "0",
+          "right": "0"
+        }
+      ]
+    },
+    {
+      "id": "euler-detailed-example-1",
+      "assertions": [
+        {
+          "left": "11/10",
+          "right": "11/10"
+        }
+      ]
+    },
+    {
+      "id": "euler-detailed-example-2",
+      "assertions": [
+        {
+          "left": "121/100",
+          "right": "121/100"
+        }
+      ]
+    },
+    {
+      "id": "euler-detailed-example-3",
+      "assertions": [
+        {
+          "left": "-2",
+          "right": "-2"
         }
       ]
     }
